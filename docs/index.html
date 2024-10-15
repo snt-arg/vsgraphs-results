@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>visual S-Graphs (vS-Graphs) Benchmarking Results</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head> 
+
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.uni.lu/snt-en/research-groups/ARG/" target="_blank">
+                        <img src="images/logo.png" alt="logo" width="150px">
+                    </a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li> 
+						<li class="scroll"><a href="#contribution">Contributions</a></li>
+                        <li class="scroll"><a href="#about">Evaluations</a></li>
+                        <li class="scroll"><a href="#team">Team</a></li>
+                        <li class="scroll"><a href="#testimonial">Citation</a></li>
+                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- <section class="download-now" id="contribution">
+        <div class="container">
+		    <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Our Contributions</h2>
+                <p class="wow fadeInDown">The main contributions of this approach can be classified into separate</p>
+            </div>
+            <div class="row">
+			    <div class="col-md-12">
+				    <div class="row">
+                        <div class="features">
+                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                                <div>
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <div class="media service-box">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Datasets</h4>
+                                        <p>In this work, we use three real-world well-known check-in datasets Gowalla, Foursquare, and Yelp datasets</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                                <div>
+                                    <i class="fa fa-tasks"></i>
+                                </div>
+                                <div class="media service-box">   
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Evaluations</h4>
+                                        <p>We have evaluated datasets with different sample rates used in the offline experiments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                                <div>
+                                    <i class="fa fa-area-chart"></i>
+                                </div>
+                                <div class="media service-box">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Unfairness of Popularity Bias</h4>
+                                        <p>We have analyzed the impact of Unfairness of Popularity Bias in Point-of-Interest Recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                <div>
+                                    <i class="fa fa-trophy"></i>
+                                </div>
+                                <div class="media service-box">                            
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Robustness</h4>
+                                        <p>The proposed approach was robust in terms of providing valuable outcomes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+			    </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Evaluations</h2>
+                <p class="wow fadeInDown">The full evaluation results are presented in tables below:</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 wow fadeInDown">
+                    <div class="tableTab">
+                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaTest')" id="defaultOpenTableTab">Gowalla (Test)</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaValidation')">Gowalla (Validation)</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'YelpTest')">Yelp (Test)</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'YelpValidation')">Yelp (Validation)</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaUserFairness')">Gowalla User Fairness</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'YelpUserFairness')">Yelp User Fairness</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaItemFairness')">Gowalla Item Fairness</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'YelpItemFairness')">Yelp Item Fairness</button>
+                    </div>
+                </div>
+                <div class="col-sm-10 wow fadeInDown">
+                    <div id="GowallaTest" class="tabContent">
+                        <div id="GowallaTestWrapper"></div>
+                    </div>
+                    <div id="GowallaValidation" class="tabContent">
+                        <div id="GowallaValidationWrapper"></div>
+                    </div>
+                    <div id="YelpTest" class="tabContent">
+                        <div id="YelpTestWrapper"></div>
+                    </div>
+                    <div id="YelpValidation" class="tabContent">
+                        <div id="YelpValidationWrapper"></div>
+                    </div>
+                    <div id="GowallaUserFairness" class="tabContent">
+                        <div id="GowallaUserFairnessWrapper"></div>
+                    </div>
+                    <div id="YelpUserFairness" class="tabContent">
+                        <div id="YelpUserFairnessWrapper"></div>
+                    </div>
+                    <div id="GowallaItemFairness" class="tabContent">
+                        <div id="GowallaItemFairnessWrapper"></div>
+                    </div>
+                    <div id="YelpItemFairness" class="tabContent">
+                        <div id="YelpItemFairnessWrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown">
+                    <div id="slider">
+                        <a class="control_next">Nxt</a>
+                        <a class="control_prev">Prv</a>
+                        <ul>
+                            <li>
+                                <h6>Corr User Average - Gowalla</h6>
+                                <img src="./images/paper-figs/Corr User Average - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Corr User Average - Yelp</h6>
+                                <img src="./images/paper-figs/Corr User Average - Yelp.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Corr User Number - Gowalla</h6>
+                                <img src="./images/paper-figs/Corr User Number - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Corr User Number - Yelp</h6>
+                                <img src="./images/paper-figs/Corr User Number - Yelp.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Corr User Percentage - Gowalla</h6>
+                                <img src="./images/paper-figs/Corr User Percentage - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Corr User Percentage - Yelp</h6>
+                                <img src="./images/paper-figs/Corr User Percentage - Yelp.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Long-tail Log - Gowalla</h6>
+                                <img src="./images/paper-figs/Long-tail Log - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Long-tail Log - Yelp</h6>
+                                <img src="./images/paper-figs/Long-tail Log - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Long-tail Normal - Gowalla</h6>
+                                <img src="./images/paper-figs/Long-tail Normal - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>Long-tail Normal - Yelp</h6>
+                                <img src="./images/paper-figs/Long-tail Normal - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>User PoI Ratio - Gowalla</h6>
+                                <img src="./images/paper-figs/User PoI Ratio - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h6>User PoI Ratio - Yelp</h6>
+                                <img src="./images/paper-figs/User PoI Ratio - Gowalla.jpg" style="width: 80%;"/>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Our Team</h2>
+                <p class="wow fadeInDown">We are a diverse group of individuals who bring perspectives to the state-of-the-art projects.</p>
+            </div>			
+        <div class="row" data-anim-type="fade-in-up">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="team-wrapper">
+                    <div class="team-inner" style="background-image: url('images/team/yashar_deldjoo.jpg')">
+                        <a href="https://yasdel.github.io/" target="_blank">
+                            <i class="fa fa-github" style="margin-top: 5px;"></i>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h3>Dr. Yashar Deldjoo</h3>
+                        <h5><strong>Team Lead</strong></h5>
+                        <br>
+                        <p>Assistant professor at Polytechnic University of Bari</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="team-wrapper">
+                    <div class="team-inner" style="background-image: url('images/team/hossein_rahmani.jpg')">
+                        <a href="https://github.com/rahmanidashti" target="_blank">
+                            <i class="fa fa-github" style="margin-top: 5px;"></i>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h3>Hossein A. Rahmani</h3>
+                        <h5><strong>Researcher &amp; Developer</strong></h5>
+                        <br>
+                        <p>Visiting Researcher at the University College London</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="team-wrapper">
+                    <div class="team-inner" style="background-image: url('images/team/ali_tourani.png')">
+                        <a href="https://github.com/alitourani" target="_blank">
+                            <i class="fa fa-github" style="margin-top: 5px;"></i>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h3>Ali Tourani</h3>
+                        <h5><strong>Researcher &amp; Developer</strong></h5>
+                        <br>
+                        <p>Porspective Ph.D. Student at the University of Luxembourg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="team-wrapper">
+                    <div class="team-inner" style="background-image: url('images/team/mohammadmehdi_naghiaei.jpg')">
+                        <a href="https://github.com/naghiaei" target="_blank">
+                            <i class="fa fa-github" style="margin-top: 5px;"></i>
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h3>Mohammadmehdi Naghiaei</h3>
+                        <h5><strong>Developer &amp; Designer </strong></h5>
+                        <p>Ph.D. student at the University of Southern California</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="testimonial-area" id="testimonial">
+        <div class="container">
+            <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Citation</h2>
+            <p class="wow fadeInDown">You can cite <a href="https://arxiv.org/abs/2202.13307" target="_blank">our paper</a> using the reference text below:</p>
+        </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>                                    
+                                    <span>@article{rahmani2022unfairness,</span><br>
+                                    <span>author =  {Hossein A. Rahmani and Yashar Deldjoo and Ali Tourani and Mohammadmehdi Naghiaei},</span><br>
+                                    <span>title = {The Unfairness of Active Users and Popularity Bias in Point-of-Interest Recommendation},</span><br>
+                                    <span>year = {2022},</span><br>
+                                    <span>url = {https://arxiv.org/abs/2202.13307},</span><br>
+                                    <span>archivePrefix = {arXiv},</span><br>
+                                    <span>primaryClass = {cs.IR},</span><br>
+                                    <span>eprint = {2202.13307}</span><br>
+                                    <span>}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images//paperPages.jpg" style="width: 100%;"/>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contact Us</h2>
+                <p class="wow fadeInDown">Have any questions or looking for contribution? We'd love to hear from you.</p>
+            </div>
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-sm-7 col-md-7">
+                    <div class="contact-form">
+                        <address>
+                          <h4>⚠️ COVID-19 and working from home ⚠️</h4><br>
+                          Currently, we are working remotely! We would be glad if you contact us through email.<br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5">
+                    <img src="./images/contact.png" style="margin-top: -120px; width: 90%;"/>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2024 All rights reserved - <a target="_blank" href="https://github.com/snt-arg" title="RecSys Lab">RecSys Lab</a>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.uni.lu/snt-en/research-groups/arg/" target="_blank">
+                                <i class="fa fa-house"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/snt-arg" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/tabHandler.js"></script>
+    <script src="js/custom-scripts.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- Importing tables -->
+    <script type="text/javascript">
+        $("#GowallaTestWrapper").load('tables/GowallaTest.html');
+        $("#GowallaValidationWrapper").load('tables/GowallaValidation.html');
+        $("#YelpTestWrapper").load('tables/YelpTest.html');
+        $("#YelpValidationWrapper").load('tables/YelpValidation.html');
+        $("#GowallaItemFairnessWrapper").load('tables/item-fairness/GowallaItemFairness.html');
+        $("#YelpItemFairnessWrapper").load('tables/item-fairness/YelpItemFairness.html');
+        $("#GowallaUserFairnessWrapper").load('tables/user-fairness/GowallaUserFairness.html');
+        $("#YelpUserFairnessWrapper").load('tables/user-fairness/YelpUserFairness.html');
+    </script>
+    <!-- Default opened table tab -->
+    <script>
+        document.getElementById("defaultOpenTableTab").click();
+    </script>
+</body>
+</html>
