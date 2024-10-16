@@ -83,7 +83,7 @@ hr {
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background: #ff8f00;
+  background: #ff0040;
 }
 .column-title {
   margin-top: 0;
@@ -266,7 +266,7 @@ ul.nostyle i {
   font-size: 60px;
   margin-top: 180px;
   margin-bottom: 30px;
-  color: #ff8f00;
+  color: #ff0040;
   text-shadow: 10px 0 10px #424242;
 }
 #hero-banner.banner-inner h2 > span {
@@ -891,7 +891,7 @@ ul.nostyle i {
   color: #ffffff;
 }
 #contact-us {
-  padding: 100px 0 10px;
+  padding: 50px 0 10px;
 }
 #contact-us h1,
 #contact-us h2 {
