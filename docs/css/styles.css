@@ -511,7 +511,7 @@ ul.nostyle i {
 #testimonial {
   background: #474747;
   background-size: cover;
-  padding: 140px 0;
+  padding: 50px 0;
   color: #fff;
 }
 #testimonial h2 {
@@ -559,12 +559,6 @@ ul.nostyle i {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   padding: 150px 0 10px;
-  /*background-image: url('../img/girl-big.jpg');*/
-  /* border-top: 1px solid #fff; */
-  /* border-right: 1px solid #fff; */
-  /* border-left: 1px solid #fff; */
-  /* border-radius: 10px 10px 0px 0px; */
-  /* background: red; */
 }
 
 .team-wrapper > .team-inner > a {
@@ -669,7 +663,7 @@ ul.nostyle i {
 }
 /*Team*/
 #team {
-  padding: 140px 0;
+  padding: 150px 0;
 }
 
 /*Testimonial Area*/
