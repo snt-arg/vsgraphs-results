@@ -50,7 +50,7 @@ hr {
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .section-header .section-title {
   font-size: 44px;
