@@ -119,7 +119,7 @@
         </div>
     </section>
 
-    <!-- <section id="about">
+    <section id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Evaluations</h2>
@@ -128,40 +128,12 @@
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaTest')" id="defaultOpenTableTab">Gowalla (Test)</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaValidation')">Gowalla (Validation)</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'YelpTest')">Yelp (Test)</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'YelpValidation')">Yelp (Validation)</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaUserFairness')">Gowalla User Fairness</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'YelpUserFairness')">Yelp User Fairness</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'GowallaItemFairness')">Gowalla Item Fairness</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'YelpItemFairness')">Yelp Item Fairness</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'AccuracySLAM')" id="defaultOpenTableTab">Gowalla (Test)</button>
                     </div>
                 </div>
                 <div class="col-sm-10 wow fadeInDown">
-                    <div id="GowallaTest" class="tabContent">
-                        <div id="GowallaTestWrapper"></div>
-                    </div>
-                    <div id="GowallaValidation" class="tabContent">
-                        <div id="GowallaValidationWrapper"></div>
-                    </div>
-                    <div id="YelpTest" class="tabContent">
-                        <div id="YelpTestWrapper"></div>
-                    </div>
-                    <div id="YelpValidation" class="tabContent">
-                        <div id="YelpValidationWrapper"></div>
-                    </div>
-                    <div id="GowallaUserFairness" class="tabContent">
-                        <div id="GowallaUserFairnessWrapper"></div>
-                    </div>
-                    <div id="YelpUserFairness" class="tabContent">
-                        <div id="YelpUserFairnessWrapper"></div>
-                    </div>
-                    <div id="GowallaItemFairness" class="tabContent">
-                        <div id="GowallaItemFairnessWrapper"></div>
-                    </div>
-                    <div id="YelpItemFairness" class="tabContent">
-                        <div id="YelpItemFairnessWrapper"></div>
+                    <div id="AccuracySLAM" class="tabContent">
+                        <div id="AccuracySLAMWrapper"></div>
                     </div>
                 </div>
             </div>
@@ -172,59 +144,15 @@
                         <a class="control_prev">Prv</a>
                         <ul>
                             <li>
-                                <h6>Corr User Average - Gowalla</h6>
-                                <img src="./images/paper-figs/Corr User Average - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Corr User Average - Yelp</h6>
-                                <img src="./images/paper-figs/Corr User Average - Yelp.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Corr User Number - Gowalla</h6>
-                                <img src="./images/paper-figs/Corr User Number - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Corr User Number - Yelp</h6>
-                                <img src="./images/paper-figs/Corr User Number - Yelp.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Corr User Percentage - Gowalla</h6>
-                                <img src="./images/paper-figs/Corr User Percentage - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Corr User Percentage - Yelp</h6>
-                                <img src="./images/paper-figs/Corr User Percentage - Yelp.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Long-tail Log - Gowalla</h6>
-                                <img src="./images/paper-figs/Long-tail Log - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Long-tail Log - Yelp</h6>
-                                <img src="./images/paper-figs/Long-tail Log - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Long-tail Normal - Gowalla</h6>
-                                <img src="./images/paper-figs/Long-tail Normal - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>Long-tail Normal - Yelp</h6>
-                                <img src="./images/paper-figs/Long-tail Normal - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>User PoI Ratio - Gowalla</h6>
-                                <img src="./images/paper-figs/User PoI Ratio - Gowalla.jpg" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h6>User PoI Ratio - Yelp</h6>
-                                <img src="./images/paper-figs/User PoI Ratio - Gowalla.jpg" style="width: 80%;"/>
+                                <h6>Evaluation ICL</h6>
+                                <img src="./images/eval/eval-icl.png" style="width: 80%;"/>
                             </li>
                         </ul>  
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="team">
         <div class="container">
@@ -434,14 +362,7 @@
     <script src="js/slider.js"></script>
     <!-- Importing tables -->
     <script type="text/javascript">
-        $("#GowallaTestWrapper").load('tables/GowallaTest.html');
-        $("#GowallaValidationWrapper").load('tables/GowallaValidation.html');
-        $("#YelpTestWrapper").load('tables/YelpTest.html');
-        $("#YelpValidationWrapper").load('tables/YelpValidation.html');
-        $("#GowallaItemFairnessWrapper").load('tables/item-fairness/GowallaItemFairness.html');
-        $("#YelpItemFairnessWrapper").load('tables/item-fairness/YelpItemFairness.html');
-        $("#GowallaUserFairnessWrapper").load('tables/user-fairness/GowallaUserFairness.html');
-        $("#YelpUserFairnessWrapper").load('tables/user-fairness/YelpUserFairness.html');
+        $("#AccuracySLAMWrapper").load('tables/Test.html');
     </script>
     <!-- Default opened table tab -->
     <script>
