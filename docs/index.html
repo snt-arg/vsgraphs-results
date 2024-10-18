@@ -123,17 +123,25 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Evaluations</h2>
-                <p class="wow fadeInDown">The full evaluation results are presented in tables below:</p>
             </div>
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'AccuracySLAM')" id="defaultOpenTableTab">Gowalla (Test)</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE')" id="defaultOpenTableTab">Trajectory
+                            Accuracy</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'Ablation')" id="defaultOpenTableTab">Ablation Study</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'SceneGraph')" id="defaultOpenTableTab">3D Scene Graph Reconstruction</button>
                     </div>
                 </div>
                 <div class="col-sm-10 wow fadeInDown">
-                    <div id="AccuracySLAM" class="tabContent">
-                        <div id="AccuracySLAMWrapper"></div>
+                    <div id="ATE" class="tabContent">
+                        <div id="ATEWrapper"></div>
+                    </div>
+                    <div id="Ablation" class="tabContent">
+                        <div id="AblationWrapper"></div>
+                    </div>
+                    <div id="SceneGraph" class="tabContent">
+                        <div id="SceneGraphWrapper"></div>
                     </div>
                 </div>
             </div>
@@ -144,10 +152,14 @@
                         <a class="control_prev">Prv</a>
                         <ul>
                             <li>
-                                <h6>Evaluation ICL</h6>
+                                <h6>Evaluation ICL - Seq01</h6>
                                 <img src="./images/eval/eval-icl.png" style="width: 80%;"/>
                             </li>
-                        </ul>  
+                            <li>
+                                <h6>Evaluation ICL- Seq02</h6>
+                                <img src="./images/eval/eval-icl.png" style="width: 80%;" />
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -362,7 +374,9 @@
     <script src="js/slider.js"></script>
     <!-- Importing tables -->
     <script type="text/javascript">
-        $("#AccuracySLAMWrapper").load('tables/Test.html');
+        $("#ATEWrapper").load('tables/ATE.html');
+        $("#AblationWrapper").load('tables/Ablation.html');
+        $("#SceneGraphWrapper").load('tables/SceneGraph.html');
     </script>
     <!-- Default opened table tab -->
     <script>
