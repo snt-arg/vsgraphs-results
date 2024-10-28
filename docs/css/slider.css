@@ -1,11 +1,11 @@
-#slider {
+.slider {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
   border-radius: 4px;
 }
 
-#slider ul {
+.slider ul {
   position: relative;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
   list-style: none;
 }
 
-#slider ul li {
+.slider ul li {
   position: relative;
   display: block;
   float: left;
@@ -26,8 +26,8 @@
   line-height: 300px;
 }
 
-a.control_prev,
-a.control_next {
+.slider a.control_prev,
+.slider a.control_next {
   font-size: 10px;
   position: absolute;
   top: 40%;
@@ -44,17 +44,17 @@ a.control_next {
   cursor: pointer;
 }
 
-a.control_prev:hover,
-a.control_next:hover {
+.slider a.control_prev:hover,
+.slider a.control_next:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
 }
 
-a.control_prev {
+.slider a.control_prev {
   border-radius: 0 2px 2px 0;
 }
 
-a.control_next {
+.slider a.control_next {
   right: 0;
   border-radius: 2px 0 0 2px;
 }
