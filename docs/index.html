@@ -129,8 +129,9 @@
                     <div class="tableTab">
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE')" id="defaultOpenTableTab">Trajectory
                             Accuracy</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'Ablation')" id="defaultOpenTableTab">Ablation Study</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'SceneGraph')" id="defaultOpenTableTab">3D Scene Graph Reconstruction</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'Ablation')">Ablation Study</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'SceneGraph')">3D Scene Graph Reconstruction</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'Mapping')">Mapping Performance</button>
                     </div>
                 </div>
                 <div class="col-sm-10 wow fadeInDown">
@@ -143,7 +144,13 @@
                     <div id="SceneGraph" class="tabContent">
                         <div id="SceneGraphWrapper"></div>
                     </div>
+                    <div id="Mapping" class="tabContent">
+                        <div id="MappingWrapper"></div>
+                    </div>
                 </div>
+            </div>
+            <div style="padding: 20px;">
+                <h4>Reconstructed Maps using vS-Graphs:</h4>
             </div>
             <div class="row">
                 <div class="col-sm-12 wow fadeInDown">
@@ -152,41 +159,44 @@
                         <a class="control_prev">Prv</a>
                         <ul>
                             <li>
-                                <h6>Evaluation ICL - Seq01</h6>
+                                <h5>ICL Dataset - Seq01</h5>
                                 <img src="./images/eval/eval-icl.png" style="width: 80%;"/>
                             </li>
                             <li>
-                                <h6>Evaluation ICL- Seq02</h6>
+                                <h5>ICL Dataset- Seq02</h5>
                                 <img src="./images/eval/eval-icl.png" style="width: 80%;" />
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div style="padding: 20px;">
+                <h4>Mapping Performance Across 10 iterations using Root Mean Square Error (RMSE):</h4>
+            </div>
             <div class="row">
                 <div class="col-sm-12 wow fadeInDown">
-                    <div class="slider" style="height: 400px;">
+                    <div class="slider" style="height: 400px !important;">
                         <a class="control_next">Nxt</a>
                         <a class="control_prev">Prv</a>
                         <ul>
                             <li>
-                                <h6>RMSE - Sequence A1</h6>
+                                <h5>AutoSense Dataset - Sequence A1</h5>
                                 <img src="./images/eval/mapping/rmse_A1.png" style="width: 90%;" />
                             </li>
                             <li>
-                                <h6>RMSE - Sequence A2</h6>
+                                <h5>AutoSense Dataset - Sequence A2</h5>
                                 <img src="./images/eval/mapping/rmse_A2.png" style="width: 90%;" />
                             </li>
                             <li>
-                                <h6>RMSE - Sequence A5</h6>
+                                <h5>AutoSense Dataset - Sequence A5</h5>
                                 <img src="./images/eval/mapping/rmse_A5.png" style="width: 90%;" />
                             </li>
                             <li>
-                                <h6>RMSE - Sequence A6</h6>
+                                <h5>AutoSense Dataset - Sequence A6</h5>
                                 <img src="./images/eval/mapping/rmse_A6.png" style="width: 90%;" />
                             </li>
                             <li>
-                                <h6>RMSE - Sequence A7</h6>
+                                <h5>AutoSense Dataset - Sequence A7</h5>
                                 <img src="./images/eval/mapping/rmse_A7.png" style="width: 90%;" />
                             </li>
                         </ul>
@@ -405,6 +415,7 @@
     <!-- Importing tables -->
     <script type="text/javascript">
         $("#ATEWrapper").load('tables/ATE.html');
+        $("#MappingWrapper").load('tables/mapping.html');
         $("#AblationWrapper").load('tables/Ablation.html');
         $("#SceneGraphWrapper").load('tables/SceneGraph.html');
     </script>
