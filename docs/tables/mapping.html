@@ -2,415 +2,59 @@
     <table>
         <thead>
             <tr>
-                <th>Dataset</th>
-                <th>Sequence</th>
-                <th>vS-Graphs (RMSE)</th>
-                <th>ORB-SLAM 3.0 (RMSE)</th>
-                <th>vS-Graphs (No. MapPoints)</th>
-                <th>ORB-SLAM 3.0 (No. MapPoints)</th>
+                <th rowspan="2">Dataset</th>
+                <th rowspan="2">Sequence</th>
+                <th colspan="2">RMSE Range</th>
+                <th colspan="2">No. Points Range</th>
+            </tr>
+            <tr>
+                <th>vS-Graphs</th>
+                <th>ORB-SLAM 3.0</th>
+                <th>vS-Graphs</th>
+                <th>ORB-SLAM 3.0</th>
             </tr>
         </thead>
         <tbody>
             <!-- A1 -->
             <tr>
                 <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-1)</td>
-                <td class="tmp_rmse_v">0.259</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6759</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-2)</td>
-                <td class="tmp_rmse_v">0.310</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6704</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-3)</td>
-                <td class="tmp_rmse_v">0.261</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6744</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-4)</td>
-                <td class="tmp_rmse_v">0.345</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6741</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-5)</td>
-                <td class="tmp_rmse_v">0.341</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6804</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-6)</td>
-                <td class="tmp_rmse_v">0.312</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6842</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-7)</td>
-                <td class="tmp_rmse_v">0.290</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6691</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-8)</td>
-                <td class="tmp_rmse_v">0.325</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">6821</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-9)</td>
-                <td class="tmp_rmse_v">0.337</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A1 (iteration-10)</td>
-                <td class="tmp_rmse_v">0.276</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
+                <td class="tmp_seq">A1 (iter. 1)</td>
+                <td class="tmp_rmse_v">[0.260-0.345]</td>
+                <td class="tmp_rmse_o">[0.275-0.443]</td>
+                <td class="tmp_nmp_v">[6691-6875]</td>
+                <td class="tmp_nmp_o">[6903-7130]</td>
             </tr>
             <!-- A2 -->
             <tr>
                 <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-1)</td>
+                <td class="tmp_seq">A2 (iter. 1)</td>
                 <td class="tmp_rmse_v">0.233</td>
                 <td class="tmp_rmse_o"></td>
                 <td class="tmp_nmp_v">7304</td>
                 <td class="tmp_nmp_o"></td>
             </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-2)</td>
-                <td class="tmp_rmse_v">0.216</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7120</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-3)</td>
-                <td class="tmp_rmse_v">0.230</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7420</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-4)</td>
-                <td class="tmp_rmse_v">0.249</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7457</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-5)</td>
-                <td class="tmp_rmse_v">0.250</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7421</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-6)</td>
-                <td class="tmp_rmse_v">0.241</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7212</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-7)</td>
-                <td class="tmp_rmse_v">0.256</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7382</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-8)</td>
-                <td class="tmp_rmse_v">0.285</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7160</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-9)</td>
-                <td class="tmp_rmse_v">0.242</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7327</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A2 (iteration-10)</td>
-                <td class="tmp_rmse_v">0.231</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">7299</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
             <!-- A5 -->
             <tr>
                 <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-1)</td>
+                <td class="tmp_seq">A5 (iter. 1)</td>
                 <td class="tmp_rmse_v">0.275</td>
                 <td class="tmp_rmse_o"></td>
                 <td class="tmp_nmp_v">11764</td>
                 <td class="tmp_nmp_o"></td>
             </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-2)</td>
-                <td class="tmp_rmse_v">0.554</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11591</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-3)</td>
-                <td class="tmp_rmse_v">0.243</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11937</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-4)</td>
-                <td class="tmp_rmse_v">0.351</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">12054</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-5)</td>
-                <td class="tmp_rmse_v">0.284</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">12156</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-6)</td>
-                <td class="tmp_rmse_v">0.380</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11844</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-7)</td>
-                <td class="tmp_rmse_v">0.272</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11471</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-8)</td>
-                <td class="tmp_rmse_v">0.292</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11475</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-9)</td>
-                <td class="tmp_rmse_v">0.424</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">12502</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A5 (iteration-10)</td>
-                <td class="tmp_rmse_v">0.324</td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v">11577</td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
             <!-- A6 -->
             <tr>
                 <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-1)</td>
-                <td class="tmp_rmse_v"></td>
+                <td class="tmp_seq">A6 (iter. 1)</td>
+                <td class="tmp_rmse_v">4.378</td>
                 <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-2)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-3)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-4)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-5)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-6)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-7)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-8)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-9)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A6 (iteration-10)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
+                <td class="tmp_nmp_v">20607</td>
                 <td class="tmp_nmp_o"></td>
             </tr>
             <!-- A7 -->
             <tr>
                 <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-1)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-2)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-3)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-4)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-5)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-6)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-7)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-8)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-9)</td>
-                <td class="tmp_rmse_v"></td>
-                <td class="tmp_rmse_o"></td>
-                <td class="tmp_nmp_v"></td>
-                <td class="tmp_nmp_o"></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">AutoSense</td>
-                <td class="tmp_seq">A7 (iteration-10)</td>
+                <td class="tmp_seq">A7 (iter. 1)</td>
                 <td class="tmp_rmse_v"></td>
                 <td class="tmp_rmse_o"></td>
                 <td class="tmp_nmp_v"></td>
