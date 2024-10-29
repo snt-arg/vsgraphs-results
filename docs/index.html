@@ -127,16 +127,31 @@
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE')" id="defaultOpenTableTab">Trajectory
-                            Accuracy</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenTableTab">ATE ICL</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">ATE OpenLORIS</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ATE ScanNet</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">ATE TUM-RGBD</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">ATE AutoSense</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'Mapping')">Mapping Performance</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'Ablation')">Ablation Study</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'SceneGraph')">3D Scene Graph Reconstruction</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'Mapping')">Mapping Performance</button>
                     </div>
                 </div>
                 <div class="col-sm-10 wow fadeInDown">
-                    <div id="ATE" class="tabContent">
-                        <div id="ATEWrapper"></div>
+                    <div id="ATE_ICL" class="tabContent">
+                        <div id="ATEWrapper_ICL"></div>
+                    </div>
+                    <div id="ATE_OL" class="tabContent">
+                        <div id="ATEWrapper_OL"></div>
+                    </div>
+                    <div id="ATE_SC" class="tabContent">
+                        <div id="ATEWrapper_SC"></div>
+                    </div>
+                    <div id="ATE_TUM" class="tabContent">
+                        <div id="ATEWrapper_TUM"></div>
+                    </div>
+                    <div id="ATE_AS" class="tabContent">
+                        <div id="ATEWrapper_AS"></div>
                     </div>
                     <div id="Ablation" class="tabContent">
                         <div id="AblationWrapper"></div>
@@ -414,7 +429,11 @@
     <script src="js/slider.js"></script>
     <!-- Importing tables -->
     <script type="text/javascript">
-        $("#ATEWrapper").load('tables/ate.html');
+        $("#ATEWrapper_ICL").load('tables/ate_icl.html');
+        $("#ATEWrapper_TUM").load('tables/ate_tum.html');
+        $("#ATEWrapper_SC").load('tables/ate_scannet.html');
+        $("#ATEWrapper_OL").load('tables/ate_openloris.html');
+        $("#ATEWrapper_AS").load('tables/ate_autosense.html');
         $("#MappingWrapper").load('tables/mapping.html');
         $("#AblationWrapper").load('tables/Ablation.html');
         $("#SceneGraphWrapper").load('tables/SceneGraph.html');
