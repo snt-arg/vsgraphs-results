@@ -12,6 +12,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
+    <link href="css/tab.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head> 
 
@@ -127,7 +128,7 @@
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenTableTab">ATE ICL</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenGifTableTab">ATE ICL</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">ATE OpenLORIS</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ATE ScanNet</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">ATE TUM-RGBD</button>
@@ -182,6 +183,44 @@
                                 <img src="./images/eval/eval-icl.png" style="width: 80%;" />
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown" style="padding: 20px;">
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_gr')" id="defaultOpenGif">ICL#1</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_mavf')">ICL#2</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_r')">ICL#3</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_w')">ICL#4</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_wh')">ICL#5</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_diam_gr')">ICL#6</button>
+                    </div>
+                    <!-- Tab content -->
+                    <div id="icl_deer_gr" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_ground</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
+                    </div>
+                    <div id="icl_deer_mavf" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
+                    </div>
+                    <div id="icl_deer_r" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_r.gif" />
+                    </div>
+                    <div id="icl_deer_w" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_w.gif" />
+                    </div>
+                    <div id="icl_deer_wh" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_wh.gif" />
+                    </div>
+                    <div id="icl_diam_gr" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_diam_gr.gif" />
                     </div>
                 </div>
             </div>
@@ -427,6 +466,7 @@
     <script src="js/tabHandler.js"></script>
     <script src="js/custom-scripts.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
     <!-- Importing tables -->
     <script type="text/javascript">
         $("#ATEWrapper_ICL").load('tables/ate_icl.html');
@@ -440,7 +480,8 @@
     </script>
     <!-- Default opened table tab -->
     <script>
-        document.getElementById("defaultOpenTableTab").click();
+        document.getElementById("defaultOpenGif").click();
+        document.getElementById("defaultOpenGifTableTab").click();
     </script>
 </body>
 </html>
