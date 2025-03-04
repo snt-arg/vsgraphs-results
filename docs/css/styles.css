@@ -267,7 +267,11 @@ ul.nostyle i {
   margin-top: 180px;
   margin-bottom: 30px;
   color: #ff0040;
-  text-shadow: 10px 0 10px #424242;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
 }
 #hero-banner.banner-inner h2 > span {
   color: #45aed6;
