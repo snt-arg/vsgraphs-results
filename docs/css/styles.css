@@ -9,7 +9,7 @@ Author URL: http://webthemez.com
 body {
   padding-top: 100px;
   background: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   color: #282828;
   line-height: 26px;
@@ -682,10 +682,9 @@ ul.nostyle i {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 14px;
-
   color: #d0d0d0;
   line-height: 22px;
-  border-radius: 0px;
+  border-radius: 10px;
   border: 1px solid #8b8b8b;
 }
 
