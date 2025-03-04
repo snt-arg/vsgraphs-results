@@ -160,130 +160,14 @@
                     </div>
                 </div>
             </div>
+            <br/>
             <!-- Mapping -->
             <h3>📍 Mapping Performance</h3>
             <p>
-                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art
-                methods.
-                It is measured using Absolute Trajectory Error (ATE) reported in meters.
-                For evaluation, each system was evaluated over eight runs on dataset instances.
+                Analyzing the accuracy of the reconstructed maps against the ground truch <b>across eight iterations</b> shows that <b>vS-Graphs</b> performs more robost compared to its baseline, ORB-SLAM 3.0.
+                The performance is measured using Root Mean Square Error (RMSE) reported in <i>meters</i>.
+                <b>vS-Graphs</b> achieves superior performance in terms of RMSE, despite generating maps with around <b>10.15%</b> fewer points (on average).
             </p>
-            <!-- Scene understanding -->
-            <h3>🖼️ Scene Understanding Performance</h3>
-            <p>
-                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art
-                methods.
-                It is measured using Absolute Trajectory Error (ATE) reported in meters.
-                For evaluation, each system was evaluated over eight runs on dataset instances.
-            </p>
-            <h3>🔦 Type</h3>
-            <p>Text</p>
-            <div style="padding: 20px;">
-                <h4>Reconstructed Maps enriched with Building Components:</h4>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wow fadeInDown">
-                    <div class="slider">
-                        <a class="control_next">Nxt</a>
-                        <a class="control_prev">Prv</a>
-                        <ul>
-                            <li>
-                                <h5>ICL Dataset - Seq01</h5>
-                                <img src="./images/eval/eval-icl.png" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h5>ICL Dataset- Seq02</h5>
-                                <img src="./images/eval/eval-icl.png" style="width: 80%;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <h3>🔦 Type</h3>
-            <p>Text</p>
-            <div class="row">
-                <div class="col-sm-12 wow fadeInDown" style="padding: 20px;">
-                    <!-- Tab links -->
-                    <div class="tab">
-                        <button class="tablinks" onclick="openGif(event, 'as_seq08')" id="defaultOpenGif">AutoSense#1</button>
-                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq01')">AutoSense#1</button> -->
-                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq02')">AutoSense#2</button> -->
-                        <button class="tablinks" onclick="openGif(event, 'as_seq05')">AutoSense#2</button>
-                        <button class="tablinks" onclick="openGif(event, 'as_seq06')">AutoSense#3</button>
-                        <button class="tablinks" onclick="openGif(event, 'as_seq07')">AutoSense#4</button>
-                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_gr')">ICL#1</button> -->
-                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_mavf')">ICL#2</button> -->
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_r')">ICL#1</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_w')">ICL#2</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_wh')">ICL#3</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_diam_gr')">ICL#4</button>
-                        <button class="tablinks" onclick="openGif(event, 'openloris_o12')">OpenLoris</button>
-                        <button class="tablinks" onclick="openGif(event, 'tum_frb1_room')">TUM-RGBD</button>                        
-                    </div>
-                    <!-- Tab content -->
-                    <!-- <div id="icl_deer_gr" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_ground</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
-                    </div> -->
-                    <!-- <div id="icl_deer_mavf" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
-                    </div> -->
-                    <div id="icl_deer_r" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_r.gif" />
-                    </div>
-                    <div id="icl_deer_w" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_w.gif" />
-                    </div>
-                    <div id="icl_deer_wh" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_wh.gif" />
-                    </div>
-                    <div id="icl_diam_gr" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_diam_gr.gif" />
-                    </div>
-                    <div id="openloris_o12" class="tabcontent">
-                        <h3>OpenLoris Dataset - Sequence <i>office1-2</i></h3>
-                        <img src="./images/eval/scene_graph/openloris_o12.gif" />
-                    </div>
-                    <div id="tum_frb1_room" class="tabcontent">
-                        <h3>TUM-RGBD Dataset - Sequence <i>frb1_room</i></h3>
-                        <img src="./images/eval/scene_graph/tum_frb1_room.gif" />
-                    </div>
-                    <!-- <div id="as_seq01" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq01</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq01.gif" />
-                    </div> -->
-                    <!-- <div id="as_seq02" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq02</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq02.gif" />
-                    </div> -->
-                    <div id="as_seq05" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq05</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq05.gif" />
-                    </div>
-                    <div id="as_seq06" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq06</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq06.gif" />
-                    </div>
-                    <div id="as_seq07" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq07</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq07.gif" />
-                    </div>
-                    <div id="as_seq08" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq08</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq08.gif" />
-                    </div>
-                </div>
-            </div>
-            <h3>🔦 Type</h3>
-            <p>Text</p>
-            <div style="padding: 20px;">
-                <h4>Mapping Performance Across 10 iterations using Root Mean Square Error (RMSE):</h4>
-            </div>
             <div class="row">
                 <div class="col-sm-12 wow fadeInDown">
                     <div class="slider" style="height: 100px;">
@@ -318,6 +202,125 @@
                     </div>
                 </div>
             </div>
+            <br />
+            <!-- Scene understanding -->
+            <h3>🖼️ Scene Understanding Performance</h3>
+            <p>
+                Below evaluations show the performance of <b>vS-Graphs</b> in terms of scene understanding.
+                The results are presented in the form of reconstructed maps enriched with <b>building components</b> (<i>i.e.,</i> walls and ground surfaces).
+                These building components are later used to infer the <b>structural elements</b> of the environment (<i>i.e.,</i> rooms and corridors).
+            </p>
+            <!-- Table -->
+            <h4>💡 I. Scene Understanding Accuracy</h4>
+            <p>Table</p>
+            <br />
+            <!-- Building Components -->
+            <h4>🧱 Building Components Recognition</h4>
+            <p>Text</p>
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown" style="padding: 20px;">
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openGif(event, 'as_seq08')" id="defaultOpenGif">AutoSense#1</button>
+                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq01')">AutoSense#1</button> -->
+                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq02')">AutoSense#2</button> -->
+                        <button class="tablinks" onclick="openGif(event, 'as_seq05')">AutoSense#2</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq06')">AutoSense#3</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq07')">AutoSense#4</button>
+                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_gr')">ICL#1</button> -->
+                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_mavf')">ICL#2</button> -->
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_r')">ICL#1</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_w')">ICL#2</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_wh')">ICL#3</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_diam_gr')">ICL#4</button>
+                        <button class="tablinks" onclick="openGif(event, 'openloris_o12')">OpenLoris</button>
+                        <button class="tablinks" onclick="openGif(event, 'tum_frb1_room')">TUM-RGBD</button>
+                    </div>
+                    <!-- Tab content -->
+                    <!-- <div id="icl_deer_gr" class="tabcontent">
+                                    <h3>ICL Dataset - Sequence <i>deer_ground</i></h3>
+                                    <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
+                                </div> -->
+                    <!-- <div id="icl_deer_mavf" class="tabcontent">
+                                    <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                                    <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
+                                </div> -->
+                    <div id="icl_deer_r" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_r.gif" />
+                    </div>
+                    <div id="icl_deer_w" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_w.gif" />
+                    </div>
+                    <div id="icl_deer_wh" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_deer_wh.gif" />
+                    </div>
+                    <div id="icl_diam_gr" class="tabcontent">
+                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
+                        <img src="./images/eval/scene_graph/icl_diam_gr.gif" />
+                    </div>
+                    <div id="openloris_o12" class="tabcontent">
+                        <h3>OpenLoris Dataset - Sequence <i>office1-2</i></h3>
+                        <img src="./images/eval/scene_graph/openloris_o12.gif" />
+                    </div>
+                    <div id="tum_frb1_room" class="tabcontent">
+                        <h3>TUM-RGBD Dataset - Sequence <i>frb1_room</i></h3>
+                        <img src="./images/eval/scene_graph/tum_frb1_room.gif" />
+                    </div>
+                    <!-- <div id="as_seq01" class="tabcontent">
+                                    <h3>AutoSense Dataset - <i>Seq01</i></h3>
+                                    <img src="./images/eval/scene_graph/as_seq01.gif" />
+                                </div> -->
+                    <!-- <div id="as_seq02" class="tabcontent">
+                                    <h3>AutoSense Dataset - <i>Seq02</i></h3>
+                                    <img src="./images/eval/scene_graph/as_seq02.gif" />
+                                </div> -->
+                    <div id="as_seq05" class="tabcontent">
+                        <h3>AutoSense Dataset - <i>Seq05</i></h3>
+                        <img src="./images/eval/scene_graph/as_seq05.gif" />
+                    </div>
+                    <div id="as_seq06" class="tabcontent">
+                        <h3>AutoSense Dataset - <i>Seq06</i></h3>
+                        <img src="./images/eval/scene_graph/as_seq06.gif" />
+                    </div>
+                    <div id="as_seq07" class="tabcontent">
+                        <h3>AutoSense Dataset - <i>Seq07</i></h3>
+                        <img src="./images/eval/scene_graph/as_seq07.gif" />
+                    </div>
+                    <div id="as_seq08" class="tabcontent">
+                        <h3>AutoSense Dataset - <i>Seq08</i></h3>
+                        <img src="./images/eval/scene_graph/as_seq08.gif" />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- Structural Elements -->
+            <h4>🏠 Scene Graphs with Structural Elements</h4>
+            <p>Text</p>
+            <div class="row">
+                <div class="col-sm-12 wow fadeInDown">
+                    <div class="slider">
+                        <a class="control_next">Nxt</a>
+                        <a class="control_prev">Prv</a>
+                        <ul>
+                            <li>
+                                <h5>ICL Dataset - Seq01</h5>
+                                <img src="./images/eval/eval-icl.png" style="width: 80%;"/>
+                            </li>
+                            <li>
+                                <h5>ICL Dataset- Seq02</h5>
+                                <img src="./images/eval/eval-icl.png" style="width: 80%;" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- Runtime -->
+            <h3>⏱️ Runtime Analysis</h3>
+            <p>Text</p>
         </div>
     </section>
 
