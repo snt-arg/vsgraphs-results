@@ -125,17 +125,21 @@
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">📊 Evaluations</h2>
             </div>
+            <!-- ATE -->
+            <h3>📈 Absolute Trajectory Error (ATE)</h3>
+            <p>
+                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art methods.
+                It is measured using ATE reported in <i>meters</i>.
+                For evaluation, each system was evaluated <b>over eight runs</b> on dataset instances.
+            </p>
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenGifTableTab">ATE ICL</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">ATE OpenLORIS</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ATE ScanNet</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">ATE TUM-RGBD</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">ATE AutoSense</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'Mapping')">Mapping Performance</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'Ablation')">Ablation Study</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'SceneGraph')">3D Scene Graph Reconstruction</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenGifTableTab">ICL</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">OpenLORIS</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ScanNet</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">TUM-RGBD</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">AutoSense</button>
                     </div>
                 </div>
                 <div class="col-sm-10 wow fadeInDown">
@@ -154,17 +158,26 @@
                     <div id="ATE_AS" class="tabContent">
                         <div id="ATEWrapper_AS"></div>
                     </div>
-                    <div id="Ablation" class="tabContent">
-                        <div id="AblationWrapper"></div>
-                    </div>
-                    <div id="SceneGraph" class="tabContent">
-                        <div id="SceneGraphWrapper"></div>
-                    </div>
-                    <div id="Mapping" class="tabContent">
-                        <div id="MappingWrapper"></div>
-                    </div>
                 </div>
             </div>
+            <!-- Mapping -->
+            <h3>📍 Mapping Performance</h3>
+            <p>
+                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art
+                methods.
+                It is measured using Absolute Trajectory Error (ATE) reported in meters.
+                For evaluation, each system was evaluated over eight runs on dataset instances.
+            </p>
+            <!-- Scene understanding -->
+            <h3>🖼️ Scene Understanding Performance</h3>
+            <p>
+                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art
+                methods.
+                It is measured using Absolute Trajectory Error (ATE) reported in meters.
+                For evaluation, each system was evaluated over eight runs on dataset instances.
+            </p>
+            <h3>🔦 Type</h3>
+            <p>Text</p>
             <div style="padding: 20px;">
                 <h4>Reconstructed Maps enriched with Building Components:</h4>
             </div>
@@ -186,6 +199,8 @@
                     </div>
                 </div>
             </div>
+            <h3>🔦 Type</h3>
+            <p>Text</p>
             <div class="row">
                 <div class="col-sm-12 wow fadeInDown" style="padding: 20px;">
                     <!-- Tab links -->
@@ -264,6 +279,8 @@
                     </div>
                 </div>
             </div>
+            <h3>🔦 Type</h3>
+            <p>Text</p>
             <div style="padding: 20px;">
                 <h4>Mapping Performance Across 10 iterations using Root Mean Square Error (RMSE):</h4>
             </div>
