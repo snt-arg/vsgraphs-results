@@ -135,7 +135,7 @@
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown">
                     <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultOpenGifTableTab">ICL</button>
+                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultATETable">ICL</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">OpenLORIS</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ScanNet</button>
                         <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">TUM-RGBD</button>
@@ -212,7 +212,121 @@
             </p>
             <!-- Table -->
             <h4>💡 I. Scene Understanding Accuracy</h4>
-            <p>Table</p>
+            <p>Scene understanding accuracy on multi-room sequences of the <i>AutoSense</i> dataset is shown below.
+            Here, <b>BC</b> and <b>SE</b> refer to “building components” and “structural elements,” respectively.
+            </p>
+            <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 wow fadeInDown">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th colspan="2">Detected / Real</th>
+                                <th colspan="2">Precision</th>
+                                <th colspan="2">Recall</th>
+                            </tr>
+                            <tr>
+                                <th>Method</th>
+                                <th>Sequence</th>
+                                <th>BC</th>
+                                <th>SE</th>
+                                <th>BC</th>
+                                <th>SE</th>
+                                <th>BC</th>
+                                <th>SE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3"><b>vS-Graphs</b></td>
+                                <td>MR01</td>
+                                <td>13 / 12</td>
+                                <td>3 / 3</td>
+                                <td class="green-light">0.92</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-light">0.92</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td>MR02</td>
+                                <td>12 / 13</td>
+                                <td>3 / 3</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-light">0.92</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td>MR03</td>
+                                <td>20 / 17</td>
+                                <td>4 / 4</td>
+                                <td class="green-light">0.89</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-light">0.94</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3"><b>Hydra</b></td>
+                                <td>MR01</td>
+                                <td>N/A</td>
+                                <td>3 / 3</td>
+                                <td>N/A</td>
+                                <td class="green-dark">1.00</td>
+                                <td>N/A</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td>MR02</td>
+                                <td>N/A</td>
+                                <td>5 / 3</td>
+                                <td>N/A</td>
+                                <td class="yellow">0.75</td>
+                                <td>N/A</td>
+                                <td class="yellow">0.75</td>
+                            </tr>
+                            <tr>
+                                <td>MR03</td>
+                                <td>N/A</td>
+                                <td>4 / 4</td>
+                                <td>N/A</td>
+                                <td class="green-dark">1.00</td>
+                                <td>N/A</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3"><b>vGraphs (ours)</b></td>
+                                <td>MR01</td>
+                                <td>14 / 12</td>
+                                <td>3 / 3</td>
+                                <td class="green-light">0.86</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td>MR02</td>
+                                <td>14 / 13</td>
+                                <td>3 / 3</td>
+                                <td class="green-light">0.92</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-light">0.92</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                            <tr>
+                                <td>MR03</td>
+                                <td>18 / 17</td>
+                                <td>4 / 4</td>
+                                <td class="green-light">0.94</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-dark">1.00</td>
+                                <td class="green-dark">1.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-1 col-xs-0"></div>
+            </div>
             <br />
             <!-- Building Components -->
             <h4>🧱 II. Building Components Recognition</h4>
@@ -555,7 +669,8 @@
     <!-- Default opened table tab -->
     <script>
         document.getElementById("defaultOpenGif").click();
-        document.getElementById("defaultOpenGifTableTab").click();
+        document.getElementById("defaultMapTable").click();
+        document.getElementById("defaultATETable").click();
     </script>
 </body>
 </html>
