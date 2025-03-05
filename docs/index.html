@@ -330,83 +330,55 @@
             <br />
             <!-- Building Components -->
             <h4>🧱 II. Building Components Recognition</h4>
-            <p>Text</p>
+            <p>
+                Recognizing <b>building components</b> (<i>i.e.,</i> walls and ground surfaces) and constructing the optimizable scene graph based on them is one of the essential validations of <b>vS-Graphs</b>.
+                Below, you can see some of the reconstructed environment maps in different datasets using the proposed framework:
+            </p>
             <div class="row">
-                <div class="col-sm-12 wow fadeInDown" style="padding: 20px;">
+                <div class="col-sm-5 wow fadeInDown" style="padding: 20px;">
+                    <h5>🏷️ AutoSense Dataset</h5>
                     <!-- Tab links -->
                     <div class="tab">
-                        <button class="tablinks" onclick="openGif(event, 'as_seq08')" id="defaultOpenGif">AutoSense#1</button>
-                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq01')">AutoSense#1</button> -->
-                        <!-- <button class="tablinks" onclick="openGif(event, 'as_seq02')">AutoSense#2</button> -->
-                        <button class="tablinks" onclick="openGif(event, 'as_seq05')">AutoSense#2</button>
-                        <button class="tablinks" onclick="openGif(event, 'as_seq06')">AutoSense#3</button>
-                        <button class="tablinks" onclick="openGif(event, 'as_seq07')">AutoSense#4</button>
-                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_gr')">ICL#1</button> -->
-                        <!-- <button class="tablinks" onclick="openGif(event, 'icl_deer_mavf')">ICL#2</button> -->
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_r')">ICL#1</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_w')">ICL#2</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_deer_wh')">ICL#3</button>
-                        <button class="tablinks" onclick="openGif(event, 'icl_diam_gr')">ICL#4</button>
-                        <button class="tablinks" onclick="openGif(event, 'openloris_o12')">OpenLoris</button>
-                        <button class="tablinks" onclick="openGif(event, 'tum_frb1_room')">TUM-RGBD</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq08')" id="defaultOpenGif">MR03</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq01')">SR01</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq02')">SR02</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq05')">SR03</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq06')">MR01</button>
+                        <button class="tablinks" onclick="openGif(event, 'as_seq07')">MR02</button>
                     </div>
+                    <h5>🏷️ ICL Dataset</h5>
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_gr')">deer_ground</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_mavf')">deer_mavf</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_r')">deer_r</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_w')">deer_w</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_deer_wh')">deer_wh</button>
+                        <button class="tablinks" onclick="openGif(event, 'icl_diam_gr')">diam_gr</button>
+                    </div>
+                    <h5>🏷️ Others</h5>
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openGif(event, 'openloris_o12')">OpenLoris o12</button>
+                        <button class="tablinks" onclick="openGif(event, 'tum_frb1_room')">TUM-RGBD frb1_room</button>
+                    </div>
+                </div>
+                <div class="col-sm-7 wow fadeInDown" style="padding: 20px;">
                     <!-- Tab content -->
-                    <!-- <div id="icl_deer_gr" class="tabcontent">
-                                    <h3>ICL Dataset - Sequence <i>deer_ground</i></h3>
-                                    <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
-                                </div> -->
-                    <!-- <div id="icl_deer_mavf" class="tabcontent">
-                                    <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                                    <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
-                                </div> -->
-                    <div id="icl_deer_r" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_r.gif" />
-                    </div>
-                    <div id="icl_deer_w" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_w.gif" />
-                    </div>
-                    <div id="icl_deer_wh" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_deer_wh.gif" />
-                    </div>
-                    <div id="icl_diam_gr" class="tabcontent">
-                        <h3>ICL Dataset - Sequence <i>deer_mav_fast</i></h3>
-                        <img src="./images/eval/scene_graph/icl_diam_gr.gif" />
-                    </div>
-                    <div id="openloris_o12" class="tabcontent">
-                        <h3>OpenLoris Dataset - Sequence <i>office1-2</i></h3>
-                        <img src="./images/eval/scene_graph/openloris_o12.gif" />
-                    </div>
-                    <div id="tum_frb1_room" class="tabcontent">
-                        <h3>TUM-RGBD Dataset - Sequence <i>frb1_room</i></h3>
-                        <img src="./images/eval/scene_graph/tum_frb1_room.gif" />
-                    </div>
-                    <!-- <div id="as_seq01" class="tabcontent">
-                                    <h3>AutoSense Dataset - <i>Seq01</i></h3>
-                                    <img src="./images/eval/scene_graph/as_seq01.gif" />
-                                </div> -->
-                    <!-- <div id="as_seq02" class="tabcontent">
-                                    <h3>AutoSense Dataset - <i>Seq02</i></h3>
-                                    <img src="./images/eval/scene_graph/as_seq02.gif" />
-                                </div> -->
-                    <div id="as_seq05" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq05</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq05.gif" />
-                    </div>
-                    <div id="as_seq06" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq06</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq06.gif" />
-                    </div>
-                    <div id="as_seq07" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq07</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq07.gif" />
-                    </div>
-                    <div id="as_seq08" class="tabcontent">
-                        <h3>AutoSense Dataset - <i>Seq08</i></h3>
-                        <img src="./images/eval/scene_graph/as_seq08.gif" />
-                    </div>
+                    <div id="icl_deer_gr" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_gr.gif" /></div>
+                    <div id="icl_deer_mavf" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_mavf.gif" /></div>
+                    <div id="icl_deer_r" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_r.gif" /></div>
+                    <div id="icl_deer_w" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_w.gif" /></div>
+                    <div id="icl_deer_wh" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_wh.gif" /></div>
+                    <div id="icl_diam_gr" class="tabcontent"><img src="./images/eval/scene_graph/icl_diam_gr.gif" /></div>
+                    <div id="as_seq01" class="tabcontent"><img src="./images/eval/scene_graph/as_seq01.gif" /></div>
+                    <div id="as_seq02" class="tabcontent"><img src="./images/eval/scene_graph/as_seq02.gif" /></div>
+                    <div id="as_seq05" class="tabcontent"><img src="./images/eval/scene_graph/as_seq05.gif" /></div>
+                    <div id="as_seq06" class="tabcontent"><img src="./images/eval/scene_graph/as_seq06.gif" /></div>
+                    <div id="as_seq07" class="tabcontent"><img src="./images/eval/scene_graph/as_seq07.gif" /></div>
+                    <div id="as_seq08" class="tabcontent"><img src="./images/eval/scene_graph/as_seq08.gif" /></div>
+                    <div id="openloris_o12" class="tabcontent"><img src="./images/eval/scene_graph/openloris_o12.gif" /></div>
+                    <div id="tum_frb1_room" class="tabcontent"><img src="./images/eval/scene_graph/tum_frb1_room.gif" /></div>
                 </div>
             </div>
             <br />
