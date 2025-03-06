@@ -75,7 +75,8 @@ hr {
 
 .btn {
   border-width: 0;
-  border-radius: 0;
+  border-radius: 10;
+  margin: 2px 1px;
 }
 .btn.btn-primary {
   font-weight: 800;
