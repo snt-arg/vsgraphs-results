@@ -1,642 +1,1024 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="visual S-Graphs (vS-Graphs) Benchmarking Results">
-    <meta name="author" content="Ali Tourani; Saad Ejaz; Hriday Bavle; Jose Luis Sanchez-Lopez; Holger Voos;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="visual S-Graphs (vS-Graphs) Benchmarking Results"
+    />
+    <meta
+      name="author"
+      content="Ali Tourani; Saad Ejaz; Hriday Bavle; Jose Luis Sanchez-Lopez; Holger Voos;"
+    />
     <title>visual S-Graphs (vS-Graphs) Benchmarking Results</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
-    <link href="css/tab.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
-</head> 
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/tab.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
 
-<body id="home">
+  <body id="home">
     <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://www.uni.lu/snt-en/research-groups/ARG/" target="_blank">
-                        <img src="images/logo.png" alt="logo" width="150px">
-                    </a>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li> 
-						<li class="scroll"><a href="#contribution">Contributions</a></li>
-                        <li class="scroll"><a href="#about">Evaluations</a></li>
-                        <li class="scroll"><a href="#team">Team</a></li>
-                        <li class="scroll"><a href="#testimonial">Citation</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        id="main-nav"
+        class="navbar navbar-default navbar-fixed-top"
+        role="banner"
+      >
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a
+              class="navbar-brand"
+              href="https://www.uni.lu/snt-en/research-groups/ARG/"
+              target="_blank"
+            >
+              <img src="images/logo.png" alt="logo" width="150px" />
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="scroll active"><a href="#home">Home</a></li>
+              <li class="scroll"><a href="#contribution">Contributions</a></li>
+              <li class="scroll"><a href="#about">Evaluations</a></li>
+              <li class="scroll"><a href="#team">Team</a></li>
+              <li class="scroll"><a href="#testimonial">Citation</a></li>
+              <li class="scroll"><a href="#contact-us">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section id="hero-banner">
-        <div class="banner-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10">
-                        <h2>vS-Graphs: Integrating Visual SLAM and Situational Graphs</h2>
-                        <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-github fa-lg"></i> Repository on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="download-now" id="contribution">
+      <div class="banner-inner">
         <div class="container">
-		    <div class="section-header">
-                <h2 class="section-title wow fadeInDown">✨ Contributions</h2>
-                <p class="wow fadeInDown">The main contributions of this approach can be classified into separate</p>
+          <div class="row">
+            <div class="col-sm-10">
+              <h2>vS-Graphs: Integrating Visual SLAM and Situational Graphs</h2>
+              <a class="btn btn-primary btn-lg" href="#"
+                ><i class="fa fa-github fa-lg"></i> Repository on GitHub</a
+              >
             </div>
-            <div class="row">
-			    <div class="col-md-12">
-				    <div class="row">
-                        <div class="features">
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                                <div>
-                                    <i class="fa fa-wrench"></i>
-                                </div>
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">A Visual SLAM Framework</h4>
-                                        <p>A multi-threaded real-time VSLAM, able to recognize, localize, and map building components for less pose and localization errors</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                                <div>
-                                    <i class="fa fa-cogs"></i>
-                                </div>
-                                <div class="media service-box">   
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Rich Map Reconstruction</h4>
-                                        <p>A novel methodology for extracting structural elements (i.e., rooms and corridors) from detected building components (i.e., walls and grounds)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                                <div>
-                                    <i class="fa fa-area-chart"></i>
-                                </div>
-                                <div class="media service-box">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Environment-Specific Element Validation</h4>
-                                        <p>An algorithm for verifying and enriching geometric objects with their corresponding semantic entities</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                                <div>
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <div class="media service-box">                            
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Real-world Experiments</h4>
-                                        <p>Conducting real-world experiments under various indoor conditions to assess the effectiveness of the proposed approach</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-			    </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="download-now" id="contribution">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeInDown">✨ Contributions</h2>
+          <p class="wow fadeInDown">
+            The main contributions of this approach can be classified into
+            separate
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="features">
+                <div
+                  class="col-md-6 wow fadeInUp"
+                  data-wow-duration="300ms"
+                  data-wow-delay="0ms"
+                >
+                  <div>
+                    <i class="fa fa-wrench"></i>
+                  </div>
+                  <div class="media service-box">
+                    <div class="media-body">
+                      <h4 class="media-heading">A Visual SLAM Framework</h4>
+                      <p>
+                        A multi-threaded real-time VSLAM, able to recognize,
+                        localize, and map building components for less pose and
+                        localization errors
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 wow fadeInUp"
+                  data-wow-duration="300ms"
+                  data-wow-delay="100ms"
+                >
+                  <div>
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                  <div class="media service-box">
+                    <div class="media-body">
+                      <h4 class="media-heading">Rich Map Reconstruction</h4>
+                      <p>
+                        A novel methodology for extracting structural elements
+                        (i.e., rooms and corridors) from detected building
+                        components (i.e., walls and grounds)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 wow fadeInUp"
+                  data-wow-duration="300ms"
+                  data-wow-delay="200ms"
+                >
+                  <div>
+                    <i class="fa fa-area-chart"></i>
+                  </div>
+                  <div class="media service-box">
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        Environment-Specific Element Validation
+                      </h4>
+                      <p>
+                        An algorithm for verifying and enriching geometric
+                        objects with their corresponding semantic entities
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 fadeInUp"
+                  data-wow-duration="300ms"
+                  data-wow-delay="300ms"
+                >
+                  <div>
+                    <i class="fa fa-trophy"></i>
+                  </div>
+                  <div class="media service-box">
+                    <div class="media-body">
+                      <h4 class="media-heading">Real-world Experiments</h4>
+                      <p>
+                        Conducting real-world experiments under various indoor
+                        conditions to assess the effectiveness of the proposed
+                        approach
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">📊 Evaluations</h2>
-            </div>
-            <!-- ATE -->
-            <h3>📈 Absolute Trajectory Error (ATE)</h3>
-            <p>
-                Below table shows the performance of <b>vS-Graphs</b> on different datasets and compared to the state-of-the-art methods.
-                It is measured using ATE reported in <i>meters</i>.
-                For evaluation, each system was evaluated <b>over eight runs</b> on dataset instances.
-            </p>
-            <div class="row">
-                <div class="col-sm-2 wow fadeInDown">
-                    <div class="tableTab">
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_ICL')" id="defaultATETable">ICL</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">OpenLORIS</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">ScanNet</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">TUM-RGBD</button>
-                        <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">AutoSense</button>
-                    </div>
-                </div>
-                <div class="col-sm-10 wow fadeInDown">
-                    <div id="ATE_ICL" class="tabContent">
-                        <div id="ATEWrapper_ICL"></div>
-                    </div>
-                    <div id="ATE_OL" class="tabContent">
-                        <div id="ATEWrapper_OL"></div>
-                    </div>
-                    <div id="ATE_SC" class="tabContent">
-                        <div id="ATEWrapper_SC"></div>
-                    </div>
-                    <div id="ATE_TUM" class="tabContent">
-                        <div id="ATEWrapper_TUM"></div>
-                    </div>
-                    <div id="ATE_AS" class="tabContent">
-                        <div id="ATEWrapper_AS"></div>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <!-- Mapping -->
-            <h3>📍 Mapping Performance</h3>
-            <p>
-                Analyzing the accuracy of the reconstructed maps against the ground truch <b>across eight iterations</b> shows that <b>vS-Graphs</b> performs more robost compared to its baseline, ORB-SLAM 3.0.
-                The performance is measured using Root Mean Square Error (RMSE) reported in <i>meters</i>.
-                <b>vS-Graphs</b> achieves superior performance in terms of RMSE, despite generating maps with around <b>10.15%</b> fewer points (on average).
-            </p>
-            <div class="row">
-                <div class="col-sm-12 wow fadeInDown">
-                    <div class="slider" style="height: 100px;">
-                        <a class="control_next"><i class="fa fa-arrow-right"></i></a>
-                        <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
-                        <ul>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence SR01</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_SR01.png" style="width: 90%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence SR02</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_SR02.png" style="width: 90%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence SR03</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_SR03.png" style="width: 90%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR01</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_MR01.png" style="width: 90%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR02</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_MR02.png" style="width: 90%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR03</h5>
-                                <img src="./images/eval/mapping/rmse_boxplot_MR03.png" style="width: 90%;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <!-- Scene understanding -->
-            <h3>🖼️ Scene Understanding Performance</h3>
-            <p>
-                Below evaluations show the performance of <b>vS-Graphs</b> in terms of scene understanding.
-                The results are presented in the form of reconstructed maps enriched with <b>building components</b> (<i>i.e.,</i> walls and ground surfaces).
-                These building components are later used to infer the <b>structural elements</b> of the environment (<i>i.e.,</i> rooms and corridors).
-            </p>
-            <!-- Table -->
-            <h4>💡 I. Scene Understanding Accuracy</h4>
-            <p>Scene understanding accuracy on multi-room sequences of the <i>AutoSense</i> dataset is shown below.
-            Here, <b>BC</b> and <b>SE</b> refer to “building components” and “structural elements,” respectively.
-            </p>
-            <div class="row">
-                <div class="col-sm-1 col-xs-0"></div>
-                <div class="col-sm-10 wow fadeInDown">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2"></th>
-                                <th colspan="2">Detected / Real</th>
-                                <th colspan="2">Precision</th>
-                                <th colspan="2">Recall</th>
-                            </tr>
-                            <tr>
-                                <th>Method</th>
-                                <th>Sequence</th>
-                                <th>BC</th>
-                                <th>SE</th>
-                                <th>BC</th>
-                                <th>SE</th>
-                                <th>BC</th>
-                                <th>SE</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="3"><b>vS-Graphs</b></td>
-                                <td>MR01</td>
-                                <td>13 / 12</td>
-                                <td>3 / 3</td>
-                                <td class="green-light">0.92</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-light">0.92</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td>MR02</td>
-                                <td>12 / 13</td>
-                                <td>3 / 3</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-light">0.92</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td>MR03</td>
-                                <td>20 / 17</td>
-                                <td>4 / 4</td>
-                                <td class="green-light">0.89</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-light">0.94</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3"><b>Hydra</b></td>
-                                <td>MR01</td>
-                                <td>N/A</td>
-                                <td>3 / 3</td>
-                                <td>N/A</td>
-                                <td class="green-dark">1.00</td>
-                                <td>N/A</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td>MR02</td>
-                                <td>N/A</td>
-                                <td>5 / 3</td>
-                                <td>N/A</td>
-                                <td class="yellow">0.75</td>
-                                <td>N/A</td>
-                                <td class="yellow">0.75</td>
-                            </tr>
-                            <tr>
-                                <td>MR03</td>
-                                <td>N/A</td>
-                                <td>4 / 4</td>
-                                <td>N/A</td>
-                                <td class="green-dark">1.00</td>
-                                <td>N/A</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3"><b>vGraphs (ours)</b></td>
-                                <td>MR01</td>
-                                <td>14 / 12</td>
-                                <td>3 / 3</td>
-                                <td class="green-light">0.86</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td>MR02</td>
-                                <td>14 / 13</td>
-                                <td>3 / 3</td>
-                                <td class="green-light">0.92</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-light">0.92</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                            <tr>
-                                <td>MR03</td>
-                                <td>18 / 17</td>
-                                <td>4 / 4</td>
-                                <td class="green-light">0.94</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-dark">1.00</td>
-                                <td class="green-dark">1.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-sm-1 col-xs-0"></div>
-            </div>
-            <br />
-            <!-- Building Components -->
-            <h4>🧱 II. Building Components Recognition</h4>
-            <p>
-                Recognizing <b>building components</b> (<i>i.e.,</i> walls and ground surfaces) and constructing the optimizable scene graph based on them is one of the essential validations of <b>vS-Graphs</b>.
-                Below, you can see some of the reconstructed environment maps in different datasets using the proposed framework:
-            </p>
-            <div class="row">
-                <div class="col-sm-5 wow fadeInDown" style="padding: 20px;">
-                    <h5>🏷️ AutoSense Dataset</h5>
-                    <!-- Tab links -->
-                    <div>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq08')" id="defaultOpenGif">MR03</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq01')">SR01</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq02')">SR02</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq05')">SR03</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq06')">MR01</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'as_seq07')">MR02</button>
-                    </div>
-                    <br />
-                    <h5>🏷️ ICL Dataset</h5>
-                    <!-- Tab links -->
-                    <div>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_deer_gr')">deer_ground</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_deer_mavf')">deer_mavf</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_deer_r')">deer_r</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_deer_w')">deer_w</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_deer_wh')">deer_wh</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'icl_diam_gr')">diam_gr</button>
-                    </div>
-                    <br />
-                    <h5>🏷️ Others</h5>
-                    <!-- Tab links -->
-                    <div>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'openloris_o12')">OpenLoris o12</button>
-                        <button class="btn btn-primary btn-sm" onclick="openGif(event, 'tum_frb1_room')">TUM-RGBD frb1_room</button>
-                    </div>
-                </div>
-                <div class="col-sm-7 wow fadeInDown" style="padding: 20px;">
-                    <!-- Tab content -->
-                    <div id="icl_deer_gr" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_gr.gif" /></div>
-                    <div id="icl_deer_mavf" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_mavf.gif" /></div>
-                    <div id="icl_deer_r" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_r.gif" /></div>
-                    <div id="icl_deer_w" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_w.gif" /></div>
-                    <div id="icl_deer_wh" class="tabcontent"><img src="./images/eval/scene_graph/icl_deer_wh.gif" /></div>
-                    <div id="icl_diam_gr" class="tabcontent"><img src="./images/eval/scene_graph/icl_diam_gr.gif" /></div>
-                    <div id="as_seq01" class="tabcontent"><img src="./images/eval/scene_graph/as_seq01.gif" /></div>
-                    <div id="as_seq02" class="tabcontent"><img src="./images/eval/scene_graph/as_seq02.gif" /></div>
-                    <div id="as_seq05" class="tabcontent"><img src="./images/eval/scene_graph/as_seq05.gif" /></div>
-                    <div id="as_seq06" class="tabcontent"><img src="./images/eval/scene_graph/as_seq06.gif" /></div>
-                    <div id="as_seq07" class="tabcontent"><img src="./images/eval/scene_graph/as_seq07.gif" /></div>
-                    <div id="as_seq08" class="tabcontent"><img src="./images/eval/scene_graph/as_seq08.gif" /></div>
-                    <div id="openloris_o12" class="tabcontent"><img src="./images/eval/scene_graph/openloris_o12.gif" /></div>
-                    <div id="tum_frb1_room" class="tabcontent"><img src="./images/eval/scene_graph/tum_frb1_room.gif" /></div>
-                </div>
-            </div>
-            <br />
-            <!-- Structural Elements -->
-            <h4>🏠 III. Scene Graphs with Structural Elements</h4>
-            <p>
-                Recognizing <b>structural elements</b> (<i>i.e.,</i> rooms and corridors) and constructing the optimizable scene graph based on them is another essential validation of <b>vS-Graphs</b>.
-                Below, you can see some of the reconstructed environment maps enriched with structural elements in different datasets using the proposed framework:
-            </p>
-            <div class="row">
-                <div class="col-sm-12 wow fadeInDown">
-                    <div class="slider">
-                        <a class="control_next"><i class="fa fa-arrow-right"></i></a>
-                        <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
-                        <ul>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR01 (2D View)</h5>
-                                <img src="./images/eval/scene_graph_se/seq06_orbit.png" style="width: 80%;"/>
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR01 (3D View)</h5>
-                                <img src="./images/eval/scene_graph_se/seq06_ortho.png" style="width: 80%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR02 (2D View)</h5>
-                                <img src="./images/eval/scene_graph_se/seq07_orbit.png" style="width: 80%;" />
-                            </li>
-                            <li>
-                                <h5>AutoSense Dataset - Sequence MR02 (3D View)</h5>
-                                <img src="./images/eval/scene_graph_se/seq07_ortho.png" style="width: 80%;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <!-- Runtime -->
-            <h3>⏱️ Runtime Analysis</h3>
-            <p>
-                <b>vS-Graphs</b> achieves real-time performance with an average processing rate of <i>22 &plusmn; 3</i> FPS, exceeding the <i>20 FPS</i> threshold for real-time operation.
-                Below, you can see the timeline of thread execution while processing a sample dataset instance.
-            </p>
-            <div class="row" style="text-align: center;">
-                <img src="./images/eval/profiling.png" style="width: 80%;" />
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeInDown">📊 Evaluations</h2>
         </div>
+        <!-- ATE -->
+        <h3>📈 Absolute Trajectory Error (ATE)</h3>
+        <p>
+          Below table shows the performance of <b>vS-Graphs</b> on different
+          datasets and compared to the state-of-the-art methods. It is measured
+          using ATE reported in <i>meters</i>. For evaluation, each system was
+          evaluated <b>over eight runs</b> on dataset instances.
+        </p>
+        <div class="row">
+          <div class="col-sm-2 wow fadeInDown">
+            <div class="tableTab">
+              <button
+                class="tabLinks"
+                onclick="tabHandler(event, 'ATE_ICL')"
+                id="defaultATETable"
+              >
+                ICL
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">
+                OpenLORIS
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">
+                ScanNet
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">
+                TUM-RGBD
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">
+                AutoSense
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-10 wow fadeInDown">
+            <div id="ATE_ICL" class="tabContent">
+              <div id="ATEWrapper_ICL"></div>
+            </div>
+            <div id="ATE_OL" class="tabContent">
+              <div id="ATEWrapper_OL"></div>
+            </div>
+            <div id="ATE_SC" class="tabContent">
+              <div id="ATEWrapper_SC"></div>
+            </div>
+            <div id="ATE_TUM" class="tabContent">
+              <div id="ATEWrapper_TUM"></div>
+            </div>
+            <div id="ATE_AS" class="tabContent">
+              <div id="ATEWrapper_AS"></div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Mapping -->
+        <h3>📍 Mapping Performance</h3>
+        <p>
+          Analyzing the accuracy of the reconstructed maps against the ground
+          truch <b>across eight iterations</b> shows that
+          <b>vS-Graphs</b> performs more robost compared to its baseline,
+          ORB-SLAM 3.0. The performance is measured using Root Mean Square Error
+          (RMSE) reported in <i>meters</i>. <b>vS-Graphs</b> achieves superior
+          performance in terms of RMSE, despite generating maps with around
+          <b>10.15%</b> fewer points (on average).
+        </p>
+        <div class="row">
+          <div class="col-sm-12 wow fadeInDown">
+            <div class="slider" style="height: 100px">
+              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
+              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
+              <ul>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR01</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR01.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR02</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR02.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR03</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR03.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR01</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR01.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR02</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR02.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR03</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR03.png"
+                    style="width: 90%"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Scene understanding -->
+        <h3>🖼️ Scene Understanding Performance</h3>
+        <p>
+          Below evaluations show the performance of <b>vS-Graphs</b> in terms of
+          scene understanding. The results are presented in the form of
+          reconstructed maps enriched with <b>building components</b> (<i
+            >i.e.,</i
+          >
+          walls and ground surfaces). These building components are later used
+          to infer the <b>structural elements</b> of the environment (<i
+            >i.e.,</i
+          >
+          rooms and corridors).
+        </p>
+        <!-- Table -->
+        <h4>💡 I. Scene Understanding Accuracy</h4>
+        <p>
+          Scene understanding accuracy on multi-room sequences of the
+          <i>AutoSense</i> dataset is shown below. Here, <b>BC</b> and
+          <b>SE</b> refer to “building components” and “structural elements,”
+          respectively.
+        </p>
+        <div class="row">
+          <div class="col-sm-1 col-xs-0"></div>
+          <div class="col-sm-10 wow fadeInDown">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="2">Detected / Real</th>
+                  <th colspan="2">Precision</th>
+                  <th colspan="2">Recall</th>
+                </tr>
+                <tr>
+                  <th>Method</th>
+                  <th>Sequence</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3"><b>vS-Graphs</b></td>
+                  <td>MR01</td>
+                  <td>13 / 12</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>12 / 13</td>
+                  <td>3 / 3</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>20 / 17</td>
+                  <td>4 / 4</td>
+                  <td class="green-light">0.89</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.94</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td rowspan="3"><b>Hydra</b></td>
+                  <td>MR01</td>
+                  <td>N/A</td>
+                  <td>3 / 3</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>N/A</td>
+                  <td>5 / 3</td>
+                  <td>N/A</td>
+                  <td class="yellow">0.75</td>
+                  <td>N/A</td>
+                  <td class="yellow">0.75</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>N/A</td>
+                  <td>4 / 4</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td rowspan="3"><b>vGraphs (ours)</b></td>
+                  <td>MR01</td>
+                  <td>14 / 12</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.86</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>14 / 13</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>18 / 17</td>
+                  <td>4 / 4</td>
+                  <td class="green-light">0.94</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-1 col-xs-0"></div>
+        </div>
+        <br />
+        <!-- Building Components -->
+        <h4>🧱 II. Building Components Recognition</h4>
+        <p>
+          Recognizing <b>building components</b> (<i>i.e.,</i> walls and ground
+          surfaces) and constructing the optimizable scene graph based on them
+          is one of the essential validations of <b>vS-Graphs</b>. Below, you
+          can see some of the reconstructed environment maps in different
+          datasets using the proposed framework:
+        </p>
+        <div class="row">
+          <div class="col-sm-5 wow fadeInDown" style="padding: 20px">
+            <h5>🏷️ AutoSense Dataset</h5>
+            <!-- Tab links -->
+            <div>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq08')"
+                id="defaultOpenGif"
+              >
+                MR03
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq01')"
+              >
+                SR01
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq02')"
+              >
+                SR02
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq05')"
+              >
+                SR03
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq06')"
+              >
+                MR01
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq07')"
+              >
+                MR02
+              </button>
+            </div>
+            <br />
+            <h5>🏷️ ICL Dataset</h5>
+            <!-- Tab links -->
+            <div>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_gr')"
+              >
+                deer_ground
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_mavf')"
+              >
+                deer_mavf
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_r')"
+              >
+                deer_r
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_w')"
+              >
+                deer_w
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_wh')"
+              >
+                deer_wh
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_diam_gr')"
+              >
+                diam_gr
+              </button>
+            </div>
+            <br />
+            <h5>🏷️ Others</h5>
+            <!-- Tab links -->
+            <div>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'openloris_o12')"
+              >
+                OpenLoris o12
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'tum_frb1_room')"
+              >
+                TUM-RGBD frb1_room
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-7 wow fadeInDown" style="padding: 20px">
+            <!-- Tab content -->
+            <div id="icl_deer_gr" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
+            </div>
+            <div id="icl_deer_mavf" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
+            </div>
+            <div id="icl_deer_r" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_r.gif" />
+            </div>
+            <div id="icl_deer_w" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_w.gif" />
+            </div>
+            <div id="icl_deer_wh" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_wh.gif" />
+            </div>
+            <div id="icl_diam_gr" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_diam_gr.gif" />
+            </div>
+            <div id="as_seq01" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq01.gif" />
+            </div>
+            <div id="as_seq02" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq02.gif" />
+            </div>
+            <div id="as_seq05" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq05.gif" />
+            </div>
+            <div id="as_seq06" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq06.gif" />
+            </div>
+            <div id="as_seq07" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq07.gif" />
+            </div>
+            <div id="as_seq08" class="tabcontent">
+              <img src="./images/eval/scene_graph/as_seq08.gif" />
+            </div>
+            <div id="openloris_o12" class="tabcontent">
+              <img src="./images/eval/scene_graph/openloris_o12.gif" />
+            </div>
+            <div id="tum_frb1_room" class="tabcontent">
+              <img src="./images/eval/scene_graph/tum_frb1_room.gif" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Structural Elements -->
+        <h4>🏠 III. Scene Graphs with Structural Elements</h4>
+        <p>
+          Recognizing <b>structural elements</b> (<i>i.e.,</i> rooms and
+          corridors) and constructing the optimizable scene graph based on them
+          is another essential validation of <b>vS-Graphs</b>. Below, you can
+          see some of the reconstructed environment maps enriched with
+          structural elements in different datasets using the proposed
+          framework:
+        </p>
+        <div class="row">
+          <div class="col-sm-12 wow fadeInDown">
+            <div class="slider">
+              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
+              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
+              <ul>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR01 (2D View)</h5>
+                  <img
+                    src="./images/eval/scene_graph_se/seq06_orbit.png"
+                    style="width: 80%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR01 (3D View)</h5>
+                  <img
+                    src="./images/eval/scene_graph_se/seq06_ortho.png"
+                    style="width: 80%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR02 (2D View)</h5>
+                  <img
+                    src="./images/eval/scene_graph_se/seq07_orbit.png"
+                    style="width: 80%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR02 (3D View)</h5>
+                  <img
+                    src="./images/eval/scene_graph_se/seq07_ortho.png"
+                    style="width: 80%"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Runtime -->
+        <h3>⏱️ Runtime Analysis</h3>
+        <p>
+          <b>vS-Graphs</b> achieves real-time performance with an average
+          processing rate of <i>22 &plusmn; 3</i> FPS, exceeding the
+          <i>20 FPS</i> threshold for real-time operation. Below, you can see
+          the timeline of thread execution while processing a sample dataset
+          instance.
+        </p>
+        <div class="row" style="text-align: center">
+          <img src="./images/eval/profiling.png" style="width: 80%" />
+        </div>
+      </div>
     </section>
 
     <section id="team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">🚀 Team</h2>
-            </div>			
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeInDown">🚀 Team</h2>
+        </div>
+        <h3>Core Team</h3>
         <div class="row" data-anim-type="fade-in-up">
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/ali_tourani.png')">
-                        <a href="https://www.linkedin.com/in/alitourani/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Ali Tourani</h4>
-                        <br>
-                        <h5><strong>Doctoral Researcher</strong></h5>
-                        <p>SnT, University of Luxembourg, Luxembourg</p>
-                    </div>
-                </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/ali_tourani.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/alitourani/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Ali Tourani</h4>
+                <br />
+                <h5><strong>Doctoral Researcher</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/saad_ejaz.png')">
-                        <a href="https://www.linkedin.com/in/saad-ejaz-ba35281b0/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Saad Ejaz</h4>
-                        <br>
-                        <h5><strong>Doctoral Researcher</strong></h5>
-                        <p>SnT, University of Luxembourg, Luxembourg</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/saad_ejaz.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/saad-ejaz-ba35281b0/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Saad Ejaz</h4>
+                <br />
+                <h5><strong>Doctoral Researcher</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/hriday_bavle.png')">
-                        <a href="https://www.linkedin.com/in/hriday-bavle-54706033/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Hriday Bavle</h4>
-                        <br>
-                        <h5><strong>Postdoc. Researcher</strong></h5>
-                        <p>SnT, University of Luxembourg, Luxembourg</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="
+                  background-image: url('images/team/miguel_fernandez.png');
+                "
+              >
+                <a
+                  href="https://www.linkedin.com/in/miguel-fernandez-cortizas/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Miguel Fernandez-Cortizas</h4>
+                <h5><strong>Postdoc Researcher</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/david_morilla.png')">
-                        <a href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>David Morilla-Cabello</h4>
-                        <h5><strong>Ph.D. Candidate</strong></h5>
-                        <p>I3A Institute, Universidad de Zaragoza, Spain</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/asier_bikandi.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/asier-bikandi-noya/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Asier Bikandi-Noya</h4>
+                <h5><strong>Doctoral Researcher</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/joseluis_sanchezlopez.png')">
-                        <a href="https://www.linkedin.com/in/joseluis-sanchezlopez/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Jose Luis Sanchez-Lopez</h4>
-                        <h5><strong>Research Scientist</strong></h5>
-                        <p>SnT, University of Luxembourg, Luxembourg</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="
+                  background-image: url('images/team/joseluis_sanchezlopez.png');
+                "
+              >
+                <a
+                  href="https://www.linkedin.com/in/joseluis-sanchezlopez/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Jose Luis Sanchez-Lopez</h4>
+                <h5><strong>Research Scientist</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                <div class="team-wrapper">
-                    <div class="team-inner" style="background-image: url('images/team/holger_voos.png')">
-                        <a href="https://www.linkedin.com/in/holger-voos-85864938/" target="_blank">
-                            <i class="fa fa-linkedin" style="margin-top: 5px;"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Holger Voos</h4>
-                        <br>
-                        <h5><strong>Full Professor</strong></h5>
-                        <p>SnT, University of Luxembourg, Luxembourg</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/holger_voos.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/holger-voos-85864938/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Holger Voos</h4>
+                <br />
+                <h5><strong>Full Professor</strong></h5>
+                <p>SnT, University of Luxembourg</p>
+              </div>
             </div>
+          </div>
         </div>
+        <!-- Former -->
+        <h3>Former Team Members</h3>
+        <div class="row" data-anim-type="fade-in-up">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/hriday_bavle.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/hriday-bavle-54706033/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>Hriday Bavle</h4>
+                <h5><strong>GAMMA AR</strong></h5>
+                <p>Luxembourg</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- External -->
+        <div class="row" data-anim-type="fade-in-up">
+          <h3>External Collaborators</h3>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/david_morilla.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/david-morilla-cabello-359bb8164/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>David Morilla-Cabello</h4>
+                <h5><strong>Ph.D. Student</strong></h5>
+                <p>Universidad de Zaragoza, Spain</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="team-wrapper">
+              <div
+                class="team-inner"
+                style="background-image: url('images/team/david_perez.png')"
+              >
+                <a
+                  href="https://www.linkedin.com/in/david-p%C3%A9rez-saura/"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin" style="margin-top: 5px"></i>
+                </a>
+              </div>
+              <div class="description">
+                <h4>David Pérez Saura</h4>
+                <h5><strong>Ph.D. Student</strong></h5>
+                <p>Universidad Politécnica de Madrid, Spain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="testimonial-area" id="testimonial">
-        <div class="container">
-            <div class="section-header">
-            <h2 class="section-title wow fadeInDown">📝 Citation</h2>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeInDown">📝 Citation</h2>
         </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="single-testimonial animate_fade_in" style="right: 0px;">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>                                    
-                                    <span>@article{vsgraphs,</span><br>
-                                    <span style="margin-left: 10px;">title={vS-Graphs: Integrating Visual SLAM and Situational Graphs through Multi-level Scene Understanding},</span><br>
-                                    <span style="margin-left: 10px;">author={A. Tourani, S. Ejaz, H. Bavle, D. Morilla-Cabello, J.L. Sanchez-Lopez, H. Voos},</span><br>
-                                    <span style="margin-left: 10px;">year={2025},</span><br>
-                                    <span style="margin-left: 10px;">url={<a href="https://arxiv.org/abs/2503.01783" target="_blank">https://arxiv.org/abs/2503.01783</a>}</span><br>
-                                    <span>}</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <blockquote>
-                                    <span>@article{tourani2024towards,</span><br>
-                                    <span style="margin-left: 10px;">title={Towards Localizing Structural Elements: Merging Geometrical Detection with
-                                        Semantic Verification in RGB-D Data},</span><br>
-                                    <span style="margin-left: 10px;">author={A. Tourani, S. Ejaz, H. Bavle, J.L. Sanchez-Lopez, H. Voos},</span><br>
-                                    <span style="margin-left: 10px;">year={2024},</span><br>
-                                    <span style="margin-left: 10px;">url={<a href="https://arxiv.org/abs/2409.06625" target="_blank">https://arxiv.org/abs/2409.06625</a>}</span><br>
-                                    <span>}</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <div class="single-testimonial animate_fade_in" style="right: 0px">
+              <div class="row">
+                <div class="col-xs-12">
+                  <blockquote>
+                    <span>@article{vsgraphs,</span><br />
+                    <span style="margin-left: 10px"
+                      >title={vS-Graphs: Integrating Visual SLAM and Situational
+                      Graphs through Multi-level Scene Understanding},</span
+                    ><br />
+                    <span style="margin-left: 10px"
+                      >author={A. Tourani, S. Ejaz, H. Bavle, D.
+                      Morilla-Cabello, J.L. Sanchez-Lopez, H. Voos},</span
+                    ><br />
+                    <span style="margin-left: 10px">year={2025},</span><br />
+                    <span style="margin-left: 10px"
+                      >url={<a
+                        href="https://arxiv.org/abs/2503.01783"
+                        target="_blank"
+                        >https://arxiv.org/abs/2503.01783</a
+                      >}</span
+                    ><br />
+                    <span>}</span>
+                  </blockquote>
                 </div>
-                <!-- <div class="col-md-4">
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <blockquote>
+                    <span>@article{tourani2024towards,</span><br />
+                    <span style="margin-left: 10px"
+                      >title={Towards Localizing Structural Elements: Merging
+                      Geometrical Detection with Semantic Verification in RGB-D
+                      Data},</span
+                    ><br />
+                    <span style="margin-left: 10px"
+                      >author={A. Tourani, S. Ejaz, H. Bavle, J.L.
+                      Sanchez-Lopez, H. Voos},</span
+                    ><br />
+                    <span style="margin-left: 10px">year={2024},</span><br />
+                    <span style="margin-left: 10px"
+                      >url={<a
+                        href="https://arxiv.org/abs/2409.06625"
+                        target="_blank"
+                        >https://arxiv.org/abs/2409.06625</a
+                      >}</span
+                    ><br />
+                    <span>}</span>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4">
                     <img src="./images/quote.webp" style="width: 80%;"/>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
-    
+
     <section id="contact-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">☎️ Contact Us</h2>
-            </div>
-            <div class="row" style="margin-bottom: 20px;">
-                <div class="col-sm-7 col-md-7">
-                    <div class="contact-form">
-                        <address>
-                            <i class="fa fa-home fa-lg"></i>
-                            <a href="https://www.uni.lu/snt-en/research-groups/arg/" target="_blank">https://www.uni.lu/snt-en/research-groups/arg/</a>
-                        </address>
-                        <address>
-                            <i class="fa fa-github fa-lg"></i>
-                            <a href="https://github.com/snt-arg" target="_blank">https://github.com/snt-arg</a>
-                        </address>
-                        <address>
-                            <i class="fa fa-road fa-lg"></i> 29, Boulevard JF Kennedy, L-1855 LUXEMBOURG
-                        </address>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-md-5">
-                    <img src="./images/contact.png" style="width: 90%;"/>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeInDown">☎️ Contact Us</h2>
         </div>
+        <div class="row" style="margin-bottom: 20px">
+          <div class="col-sm-7 col-md-7">
+            <div class="contact-form">
+              <address>
+                <i class="fa fa-home fa-lg"></i>
+                <a
+                  href="https://www.uni.lu/snt-en/research-groups/arg/"
+                  target="_blank"
+                  >https://www.uni.lu/snt-en/research-groups/arg/</a
+                >
+              </address>
+              <address>
+                <i class="fa fa-github fa-lg"></i>
+                <a href="https://github.com/snt-arg" target="_blank"
+                  >https://github.com/snt-arg</a
+                >
+              </address>
+              <address>
+                <i class="fa fa-road fa-lg"></i> 6, rue Coudenhove-Kalergi,
+                L-1359 LUXEMBOURG
+                <br />
+                <i class="fa fa-building-o fa-lg"></i> Block E, Automation and
+                Robotics Group (ARG)
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5">
+            <img src="./images/contact.png" style="width: 90%" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-sm-12">
-                    &copy; 2024 All rights reserved - 
-                    <a target="_blank" href="https://www.uni.lu/snt-en/research-groups/ARG/" title="Automation and Robotics Group (ARG)">
-                        Automation and Robotics Group (ARG)
-                    </a>,
-                    <a target="_blank" href="https://www.uni.lu/snt-en/" title="SnT, University of Luxembourg">
-                        SnT
-                    </a>,
-                    <a target="_blank" href="https://www.uni.lu/en/" title="SnT, University of Luxembourg">
-                        University of Luxembourg
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-12">
-                    <ul class="social-icons">
-                        <li>
-                            <a href="https://www.uni.lu/snt-en/research-groups/arg/" target="_blank">
-                                <i class="fa fa-home"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/snt-arg" target="_blank">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@arg-snt-ul" target="_blank">
-                                <i class="fa fa-youtube-play"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12">
+            &copy; 2025 All rights reserved -
+            <a
+              target="_blank"
+              href="https://www.uni.lu/snt-en/research-groups/ARG/"
+              title="Automation and Robotics Group (ARG)"
+            >
+              Automation and Robotics Group (ARG) </a
+            >,
+            <a
+              target="_blank"
+              href="https://www.uni.lu/snt-en/"
+              title="SnT, University of Luxembourg"
+            >
+              SnT </a
+            >,
+            <a
+              target="_blank"
+              href="https://www.uni.lu/en/"
+              title="SnT, University of Luxembourg"
+            >
+              University of Luxembourg
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <ul class="social-icons">
+              <li>
+                <a
+                  href="https://www.uni.lu/snt-en/research-groups/arg/"
+                  target="_blank"
+                >
+                  <i class="fa fa-home"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/snt-arg" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@arg-snt-ul" target="_blank">
+                  <i class="fa fa-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/mousescroll.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
@@ -648,19 +1030,19 @@
     <script src="js/tabs.js"></script>
     <!-- Importing tables -->
     <script type="text/javascript">
-        $("#ATEWrapper_ICL").load('tables/ate_icl.html');
-        $("#ATEWrapper_TUM").load('tables/ate_tum.html');
-        $("#ATEWrapper_SC").load('tables/ate_scannet.html');
-        $("#ATEWrapper_OL").load('tables/ate_openloris.html');
-        $("#ATEWrapper_AS").load('tables/ate_autosense.html');
-        $("#MappingWrapper").load('tables/mapping.html');
-        $("#AblationWrapper").load('tables/Ablation.html');
-        $("#SceneGraphWrapper").load('tables/SceneGraph.html');
+      $("#ATEWrapper_ICL").load("tables/ate_icl.html");
+      $("#ATEWrapper_TUM").load("tables/ate_tum.html");
+      $("#ATEWrapper_SC").load("tables/ate_scannet.html");
+      $("#ATEWrapper_OL").load("tables/ate_openloris.html");
+      $("#ATEWrapper_AS").load("tables/ate_autosense.html");
+      $("#MappingWrapper").load("tables/mapping.html");
+      $("#AblationWrapper").load("tables/Ablation.html");
+      $("#SceneGraphWrapper").load("tables/SceneGraph.html");
     </script>
     <!-- Default opened table tab -->
     <script>
-        document.getElementById("defaultOpenGif").click();
-        document.getElementById("defaultATETable").click();
+      document.getElementById("defaultOpenGif").click();
+      document.getElementById("defaultATETable").click();
     </script>
-</body>
+  </body>
 </html>
