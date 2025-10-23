@@ -440,9 +440,21 @@
         <p>
           Recognizing <b>building components</b> (<i>i.e.,</i> walls and ground
           surfaces) and constructing the optimizable scene graph based on them
-          is one of the essential validations of <b>vS-Graphs</b>. Below, you
+          is an essential validations of <b>vS-Graphs</b>.
+          <!-- Below, you
           can see some of the reconstructed environment maps in different
-          datasets using the proposed framework:
+          datasets using the proposed framework: -->
+        </p>
+        <!-- Structural Elements -->
+        <h4>🏠 III. Scene Graphs with Structural Elements</h4>
+        <p>
+          Recognizing <b>structural elements</b> (<i>i.e.,</i> rooms and
+          floors) and constructing the optimizable scene graph based on them
+          is another essential validation of <b>vS-Graphs</b>.
+          <!-- Below, you can
+          see some of the reconstructed environment maps enriched with
+          structural elements in different datasets using the proposed
+          framework: -->
         </p>
         <div class="row">
           <div class="col-sm-5 wow fadeInDown" style="padding: 20px">
@@ -493,9 +505,15 @@
             <div>
               <button
                 class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_gr')"
+                onclick="openGif(event, 'icl_deer_gr_bc')"
               >
-                deer_ground
+                deer_ground (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_gr_se')"
+              >
+                deer_ground (bc+se)
               </button>
               <button
                 class="btn btn-primary btn-sm"
@@ -548,8 +566,11 @@
           </div>
           <div class="col-sm-7 wow fadeInDown" style="padding: 20px">
             <!-- Tab content -->
-            <div id="icl_deer_gr" class="tabcontent">
-              <img src="./images/eval/scene_graph/icl_deer_gr.gif" />
+            <div id="icl_deer_gr_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_gr_bc.gif" />
+            </div>
+            <div id="icl_deer_gr_se" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_gr_se.gif" />
             </div>
             <div id="icl_deer_mavf" class="tabcontent">
               <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
@@ -593,16 +614,7 @@
           </div>
         </div>
         <br />
-        <!-- Structural Elements -->
-        <h4>🏠 III. Scene Graphs with Structural Elements</h4>
-        <p>
-          Recognizing <b>structural elements</b> (<i>i.e.,</i> rooms and
-          corridors) and constructing the optimizable scene graph based on them
-          is another essential validation of <b>vS-Graphs</b>. Below, you can
-          see some of the reconstructed environment maps enriched with
-          structural elements in different datasets using the proposed
-          framework:
-        </p>
+        
         <div class="row">
           <div class="col-sm-12 wow fadeInDown">
             <div class="slider">
