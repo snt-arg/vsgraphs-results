@@ -71,10 +71,16 @@
           <div class="row">
             <div class="col-sm-10">
               <h2>vS-Graphs: Integrating Visual SLAM and Situational Graphs</h2>
-              <a class="btn btn-primary btn-lg" href="https://github.com/snt-arg/visual_sgraphs" target="_blank"
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://github.com/snt-arg/visual_sgraphs"
+                target="_blank"
                 ><i class="fa fa-github fa-lg"></i> Repository on GitHub</a
               >
-              <a class="btn btn-primary btn-lg" href="https://doi.org/10.48550/arXiv.2503.01783" target="_blank"
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://doi.org/10.48550/arXiv.2503.01783"
+                target="_blank"
                 ><i class="fa fa-file-pdf-o fa-md"></i> PDF on ArXiv</a
               >
             </div>
@@ -314,6 +320,8 @@
           >
           rooms and corridors).
         </p>
+        <br />
+
         <!-- Table -->
         <h4>💡 I. Scene Understanding Accuracy</h4>
         <p>
@@ -322,6 +330,7 @@
           <b>SE</b> refer to “building components” and “structural elements,”
           respectively.
         </p>
+
         <div class="row">
           <div class="col-sm-1 col-xs-0"></div>
           <div class="col-sm-10 wow fadeInDown">
@@ -435,29 +444,90 @@
           <div class="col-sm-1 col-xs-0"></div>
         </div>
         <br />
+        
         <!-- Building Components -->
-        <h4>🧱 II. Building Components Recognition</h4>
+        <h4>🧱 II. Qualitative Results (Generated Scene Graphs)</h4>
         <p>
-          Recognizing <b>building components</b> (<i>i.e.,</i> walls and ground
-          surfaces) and constructing the optimizable scene graph based on them
-          is an essential validations of <b>vS-Graphs</b>.
-          <!-- Below, you
-          can see some of the reconstructed environment maps in different
-          datasets using the proposed framework: -->
+          The <b>Building Components Recognition</b> module processes each
+          KeyFrame's RGB-D data to extract fundamental structural
+          elements—primarily <b>walls</b> and <b>ground surfaces</b>. Using a
+          <b>panoptic segmentation</b> backbone (pFCN or YOSO), it generates
+          pixel-level semantic labels and instance boundaries, enabling precise
+          detection of architectural components. These components are then
+          associated and merged across KeyFrames to form a consistent,
+          optimizable <b>scene graph</b> representation of the environment.
         </p>
+        <br />
+
         <!-- Structural Elements -->
-        <h4>🏠 III. Scene Graphs with Structural Elements</h4>
+        <!-- <h4>🏠 III. Structural Element Recognition</h4> -->
         <p>
-          Recognizing <b>structural elements</b> (<i>i.e.,</i> rooms and
-          floors) and constructing the optimizable scene graph based on them
-          is another essential validation of <b>vS-Graphs</b>.
-          <!-- Below, you can
-          see some of the reconstructed environment maps enriched with
-          structural elements in different datasets using the proposed
-          framework: -->
+          The <b>Structural Elements</b> module extends the scene graph by
+          detecting higher-level entities such as <b>rooms</b> and
+          <b>floors</b>. It groups spatially consistent building components into
+          enclosed areas, forming <b>rooms</b>, and aggregates them into
+          <b>floors</b> to represent full building levels. This hierarchical
+          reasoning enhances spatial understanding and supports geometry-aware
+          optimization within <b>vS-Graphs</b>.
         </p>
+        <br />
+
         <div class="row">
+          <h5>- vS-Graphs Outputs on Different Datasets</h5>
           <div class="col-sm-5 wow fadeInDown" style="padding: 20px">
+            <h5>🏷️ ICL Dataset</h5>
+            <!-- Tab links -->
+            <div>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_gr_bc')"
+              >
+                deer_ground (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_gr_se')"
+              >
+                deer_ground (bc+se)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_mavf_bc')"
+              >
+                deer_mavf (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_mavf_se')"
+              >
+                deer_mavf (bc+se)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_r')"
+              >
+                deer_r
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_w')"
+              >
+                deer_w
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_deer_wh')"
+              >
+                deer_wh
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'icl_diam_gr')"
+              >
+                diam_gr
+              </button>
+            </div>
+            <br />
             <h5>🏷️ AutoSense Dataset</h5>
             <!-- Tab links -->
             <div>
@@ -500,53 +570,7 @@
               </button>
             </div>
             <br />
-            <h5>🏷️ ICL Dataset</h5>
-            <!-- Tab links -->
-            <div>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_gr_bc')"
-              >
-                deer_ground (bc)
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_gr_se')"
-              >
-                deer_ground (bc+se)
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_mavf')"
-              >
-                deer_mavf
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_r')"
-              >
-                deer_r
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_w')"
-              >
-                deer_w
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_deer_wh')"
-              >
-                deer_wh
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'icl_diam_gr')"
-              >
-                diam_gr
-              </button>
-            </div>
-            <br />
+            
             <h5>🏷️ Others</h5>
             <!-- Tab links -->
             <div>
@@ -572,8 +596,11 @@
             <div id="icl_deer_gr_se" class="tabcontent">
               <img src="./images/eval/scene_graph/icl_deer_gr_se.gif" />
             </div>
-            <div id="icl_deer_mavf" class="tabcontent">
-              <img src="./images/eval/scene_graph/icl_deer_mavf.gif" />
+            <div id="icl_deer_mavf_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_mavf_bc.gif" />
+            </div>
+            <div id="icl_deer_mavf_se" class="tabcontent">
+              <img src="./images/eval/scene_graph/icl_deer_mavf_se.gif" />
             </div>
             <div id="icl_deer_r" class="tabcontent">
               <img src="./images/eval/scene_graph/icl_deer_r.gif" />
@@ -614,7 +641,7 @@
           </div>
         </div>
         <br />
-        
+
         <div class="row">
           <div class="col-sm-12 wow fadeInDown">
             <div class="slider">
