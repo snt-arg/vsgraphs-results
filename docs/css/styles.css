@@ -260,8 +260,22 @@ ul.nostyle i {
   color: #000;
 }
 #hero-banner {
-  background: #f7f7f7 url("../images/banner.jpg") no-repeat 100% center;
+  position: relative;
+  background: #f7f7f7 url("../images/banner.gif") no-repeat right center;
   background-size: cover;
+  background-attachment: fixed; /* optional: subtle parallax */
+  color: #fff; /* text readable on darker bg */
+}
+#hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust darkness: 0.3–0.6 range */
+  z-index: 1;
+}
+#hero-banner > * {
+  position: relative;
+  z-index: 2;
 }
 #hero-banner h2 {
   font-size: 60px;
