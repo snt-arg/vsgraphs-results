@@ -444,7 +444,7 @@
           <div class="col-sm-1 col-xs-0"></div>
         </div>
         <br />
-        
+
         <!-- Building Components -->
         <h4>🧱 II. Qualitative Results (Generated Scene Graphs)</h4>
         <p>
@@ -582,8 +582,8 @@
               </button>
             </div>
             <br />
-            
-            <h5>🏷️ Others</h5>
+
+            <h5>🏷️ OpenLoris Dataset</h5>
             <!-- Tab links -->
             <div>
               <button
@@ -610,14 +610,40 @@
               >
                 OpenLoris o1-7 (bc)
               </button>
+            </div>
+            <br />
+
+            <h5>🏷️ TUM-RGBD Dataset</h5>
+            <!-- Tab links -->
+            <div>
               <button
                 class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'tum_frb1_room')"
+                onclick="openGif(event, 'tum_frb1_room_bc')"
               >
-                TUM-RGBD frb1_room
+                TUM-RGBD frb1_room (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'tum_frb1_desk_bc')"
+              >
+                TUM-RGBD frb1_desk (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'tum_frb1_desk2_bc')"
+              >
+                TUM-RGBD frb1_desk2 (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'tum_frb2_desk_bc')"
+              >
+                TUM-RGBD frb2_desk (bc)
               </button>
             </div>
           </div>
+          <br />
+
           <div class="col-sm-7 wow fadeInDown" style="padding: 20px">
             <!-- Tab content -->
             <div id="icl_deer_gr_bc" class="tabcontent">
@@ -683,8 +709,17 @@
             <div id="openloris_o17_bc" class="tabcontent">
               <img src="./images/eval/scene_graph/openloris-off17-bc.gif" />
             </div>
-            <div id="tum_frb1_room" class="tabcontent">
-              <img src="./images/eval/scene_graph/tum_frb1_room.gif" />
+            <div id="tum_frb1_room_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/tum-fr1room-bc.gif" />
+            </div>
+            <div id="tum_frb1_desk_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/tum-fr1dsk-bc.gif" />
+            </div>
+            <div id="tum_frb1_desk2_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/tum-fr1dsk2-bc-sp02.gif" />
+            </div>
+            <div id="tum_frb2_desk_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/tum-fr2rdesk-bc.gif" />
             </div>
           </div>
         </div>
