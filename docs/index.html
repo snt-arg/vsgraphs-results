@@ -191,289 +191,25 @@
         <div class="section-header">
           <h2 class="section-title wow fadeInDown">📊 Evaluations</h2>
         </div>
-        <!-- ATE -->
-        <h3>📈 Absolute Trajectory Error (ATE)</h3>
+        <!-- Qualitative -->
+        <h3>🖼️ I. Qualitative Results (Generated Scene Graphs)</h3>
         <p>
-          Below table shows the performance of <b>vS-Graphs</b> on different
-          datasets and compared to the state-of-the-art methods. It is measured
-          using ATE reported in <i>meters</i>. For evaluation, each system was
-          evaluated <b>over eight runs</b> on dataset instances.
+          In <b>vS-Graphs</b>, the <b>Building Components Recognition</b> module
+          extracts semantic entities such as <b>walls</b> and
+          <b>ground surfaces</b> from each KeyFrame using a
+          <b>panoptic segmentation</b> backbone that provides pixel-level labels
+          and instance boundaries. A parallel
+          <b>Structural Elements Recognition</b> thread then infers higher-level
+          entities (<b>rooms</b> and <b>floors</b>) by grouping spatially
+          consistent components into enclosed areas and aggregating them across
+          building levels. This hierarchical reasoning enhances spatial
+          understanding and enables geometry-aware optimization in
+          <b>vS-Graphs</b>. Below, you can find some qualitative results of the
+          generated scene graphs on different datasets, where <b>bc</b> and
+          <b>se</b> refer to the <b>building components</b> and
+          <b>structural elements</b>, respectively.
         </p>
         <div class="row">
-          <div class="col-sm-2 wow fadeInDown">
-            <div class="tableTab">
-              <button
-                class="tabLinks"
-                onclick="tabHandler(event, 'ATE_ICL')"
-                id="defaultATETable"
-              >
-                ICL
-              </button>
-              <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">
-                OpenLORIS
-              </button>
-              <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">
-                ScanNet
-              </button>
-              <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">
-                TUM-RGBD
-              </button>
-              <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">
-                AutoSense
-              </button>
-            </div>
-          </div>
-          <div class="col-sm-10 wow fadeInDown">
-            <div id="ATE_ICL" class="tabContent">
-              <div id="ATEWrapper_ICL"></div>
-            </div>
-            <div id="ATE_OL" class="tabContent">
-              <div id="ATEWrapper_OL"></div>
-            </div>
-            <div id="ATE_SC" class="tabContent">
-              <div id="ATEWrapper_SC"></div>
-            </div>
-            <div id="ATE_TUM" class="tabContent">
-              <div id="ATEWrapper_TUM"></div>
-            </div>
-            <div id="ATE_AS" class="tabContent">
-              <div id="ATEWrapper_AS"></div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!-- Mapping -->
-        <h3>📍 Mapping Performance</h3>
-        <p>
-          Analyzing the accuracy of the reconstructed maps against the ground
-          truch <b>across eight iterations</b> shows that
-          <b>vS-Graphs</b> performs more robost compared to its baseline,
-          ORB-SLAM 3.0. The performance is measured using Root Mean Square Error
-          (RMSE) reported in <i>meters</i>. <b>vS-Graphs</b> achieves superior
-          performance in terms of RMSE, despite generating maps with around
-          <b>10.15%</b> fewer points (on average).
-        </p>
-        <div class="row">
-          <div class="col-sm-12 wow fadeInDown">
-            <div class="slider" style="height: 100px">
-              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
-              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
-              <ul>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR01</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR01.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR02</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR02.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR03</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR03.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR01</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR01.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR02</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR02.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR03</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR03.png"
-                    style="width: 90%"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!-- Scene understanding -->
-        <h3>🖼️ Scene Understanding Performance</h3>
-        <p>
-          Below evaluations show the performance of <b>vS-Graphs</b> in terms of
-          scene understanding. The results are presented in the form of
-          reconstructed maps enriched with <b>building components</b> (<i
-            >i.e.,</i
-          >
-          walls and ground surfaces). These building components are later used
-          to infer the <b>structural elements</b> of the environment (<i
-            >i.e.,</i
-          >
-          rooms and corridors).
-        </p>
-        <br />
-
-        <!-- Table -->
-        <h4>💡 I. Scene Understanding Accuracy</h4>
-        <p>
-          Scene understanding accuracy on multi-room sequences of the
-          <i>AutoSense</i> dataset is shown below. Here, <b>BC</b> and
-          <b>SE</b> refer to “building components” and “structural elements,”
-          respectively.
-        </p>
-
-        <div class="row">
-          <div class="col-sm-1 col-xs-0"></div>
-          <div class="col-sm-10 wow fadeInDown">
-            <table>
-              <thead>
-                <tr>
-                  <th colspan="2"></th>
-                  <th colspan="2">Detected / Real</th>
-                  <th colspan="2">Precision</th>
-                  <th colspan="2">Recall</th>
-                </tr>
-                <tr>
-                  <th>Method</th>
-                  <th>Sequence</th>
-                  <th>BC</th>
-                  <th>SE</th>
-                  <th>BC</th>
-                  <th>SE</th>
-                  <th>BC</th>
-                  <th>SE</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="3"><b>vS-Graphs</b></td>
-                  <td>MR01</td>
-                  <td>13 / 12</td>
-                  <td>3 / 3</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td>MR02</td>
-                  <td>12 / 13</td>
-                  <td>3 / 3</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td>MR03</td>
-                  <td>20 / 17</td>
-                  <td>4 / 4</td>
-                  <td class="green-light">0.89</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.94</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td rowspan="3"><b>Hydra</b></td>
-                  <td>MR01</td>
-                  <td>N/A</td>
-                  <td>3 / 3</td>
-                  <td>N/A</td>
-                  <td class="green-dark">1.00</td>
-                  <td>N/A</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td>MR02</td>
-                  <td>N/A</td>
-                  <td>5 / 3</td>
-                  <td>N/A</td>
-                  <td class="yellow">0.75</td>
-                  <td>N/A</td>
-                  <td class="yellow">0.75</td>
-                </tr>
-                <tr>
-                  <td>MR03</td>
-                  <td>N/A</td>
-                  <td>4 / 4</td>
-                  <td>N/A</td>
-                  <td class="green-dark">1.00</td>
-                  <td>N/A</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td rowspan="3"><b>vGraphs (ours)</b></td>
-                  <td>MR01</td>
-                  <td>14 / 12</td>
-                  <td>3 / 3</td>
-                  <td class="green-light">0.86</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td>MR02</td>
-                  <td>14 / 13</td>
-                  <td>3 / 3</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-                <tr>
-                  <td>MR03</td>
-                  <td>18 / 17</td>
-                  <td>4 / 4</td>
-                  <td class="green-light">0.94</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-sm-1 col-xs-0"></div>
-        </div>
-        <br />
-
-        <!-- Building Components -->
-        <h4>🧱 II. Qualitative Results (Generated Scene Graphs)</h4>
-        <p>
-          The <b>Building Components Recognition</b> module processes each
-          KeyFrame's RGB-D data to extract fundamental structural
-          elements—primarily <b>walls</b> and <b>ground surfaces</b>. Using a
-          <b>panoptic segmentation</b> backbone (pFCN or YOSO), it generates
-          pixel-level semantic labels and instance boundaries, enabling precise
-          detection of architectural components. These components are then
-          associated and merged across KeyFrames to form a consistent,
-          optimizable <b>scene graph</b> representation of the environment.
-        </p>
-        <br />
-
-        <!-- Structural Elements -->
-        <!-- <h4>🏠 III. Structural Element Recognition</h4> -->
-        <p>
-          The <b>Structural Elements</b> module extends the scene graph by
-          detecting higher-level entities such as <b>rooms</b> and
-          <b>floors</b>. It groups spatially consistent building components into
-          enclosed areas, forming <b>rooms</b>, and aggregates them into
-          <b>floors</b> to represent full building levels. This hierarchical
-          reasoning enhances spatial understanding and supports geometry-aware
-          optimization within <b>vS-Graphs</b>.
-        </p>
-        <br />
-
-        <div class="row">
-          <h5>- vS-Graphs Outputs on Different Datasets</h5>
           <div class="col-sm-5 wow fadeInDown" style="padding: 20px">
             <h5>🏷️ ICL Dataset</h5>
             <!-- Tab links -->
@@ -725,7 +461,255 @@
         </div>
         <br />
 
+        <!-- ATE -->
+        <h3>📈 II. Absolute Trajectory Error (ATE)</h3>
+        <p>
+          Below table shows the performance of <b>vS-Graphs</b> on different
+          datasets and compared to the state-of-the-art methods. It is measured
+          using ATE reported in <i>meters</i>. For evaluation, each system was
+          evaluated <b>over eight runs</b> on dataset instances.
+        </p>
         <div class="row">
+          <div class="col-sm-2 wow fadeInDown">
+            <div class="tableTab">
+              <button
+                class="tabLinks"
+                onclick="tabHandler(event, 'ATE_ICL')"
+                id="defaultATETable"
+              >
+                ICL
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_OL')">
+                OpenLORIS
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_SC')">
+                ScanNet
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_TUM')">
+                TUM-RGBD
+              </button>
+              <button class="tabLinks" onclick="tabHandler(event, 'ATE_AS')">
+                AutoSense
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-10 wow fadeInDown">
+            <div id="ATE_ICL" class="tabContent">
+              <div id="ATEWrapper_ICL"></div>
+            </div>
+            <div id="ATE_OL" class="tabContent">
+              <div id="ATEWrapper_OL"></div>
+            </div>
+            <div id="ATE_SC" class="tabContent">
+              <div id="ATEWrapper_SC"></div>
+            </div>
+            <div id="ATE_TUM" class="tabContent">
+              <div id="ATEWrapper_TUM"></div>
+            </div>
+            <div id="ATE_AS" class="tabContent">
+              <div id="ATEWrapper_AS"></div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Mapping -->
+        <h3>📍 III. Mapping Performance</h3>
+        <p>
+          Analyzing the accuracy of the reconstructed maps against the ground
+          truch <b>across eight iterations</b> shows that
+          <b>vS-Graphs</b> performs more robost compared to its baseline,
+          ORB-SLAM 3.0. The performance is measured using Root Mean Square Error
+          (RMSE) reported in <i>meters</i>. <b>vS-Graphs</b> achieves superior
+          performance in terms of RMSE, despite generating maps with around
+          <b>10.15%</b> fewer points (on average).
+        </p>
+        <div class="row">
+          <div class="col-sm-12 wow fadeInDown">
+            <div class="slider" style="height: 100px">
+              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
+              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
+              <ul>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR01</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR01.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR02</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR02.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence SR03</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_SR03.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR01</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR01.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR02</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR02.png"
+                    style="width: 90%"
+                  />
+                </li>
+                <li>
+                  <h5>AutoSense Dataset - Sequence MR03</h5>
+                  <img
+                    src="./images/eval/mapping/rmse_boxplot_MR03.png"
+                    style="width: 90%"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Scene understanding -->
+        <h3>🖼️ IV. Scene Understanding Performance</h3>
+        <p>
+          Below evaluations show the performance of <b>vS-Graphs</b> in terms of
+          scene understanding. The results are presented in the form of
+          reconstructed maps enriched with <b>building components</b> (<i
+            >i.e.,</i
+          >
+          walls and ground surfaces). These building components are later used
+          to infer the <b>structural elements</b> of the environment (<i
+            >i.e.,</i
+          >
+          rooms and floors).
+        </p>
+        <br />
+
+        <!-- Table -->
+        <div class="row">
+          <div class="col-sm-1 col-xs-0"></div>
+          <div class="col-sm-10 wow fadeInDown">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="2">Detected / Real</th>
+                  <th colspan="2">Precision</th>
+                  <th colspan="2">Recall</th>
+                </tr>
+                <tr>
+                  <th>Method</th>
+                  <th>Sequence</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                  <th>BC</th>
+                  <th>SE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3"><b>vS-Graphs</b></td>
+                  <td>MR01</td>
+                  <td>13 / 12</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>12 / 13</td>
+                  <td>3 / 3</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>20 / 17</td>
+                  <td>4 / 4</td>
+                  <td class="green-light">0.89</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.94</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td rowspan="3"><b>Hydra</b></td>
+                  <td>MR01</td>
+                  <td>N/A</td>
+                  <td>3 / 3</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>N/A</td>
+                  <td>5 / 3</td>
+                  <td>N/A</td>
+                  <td class="yellow">0.75</td>
+                  <td>N/A</td>
+                  <td class="yellow">0.75</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>N/A</td>
+                  <td>4 / 4</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                  <td>N/A</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td rowspan="3"><b>vGraphs (ours)</b></td>
+                  <td>MR01</td>
+                  <td>14 / 12</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.86</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>14 / 13</td>
+                  <td>3 / 3</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-light">0.92</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>18 / 17</td>
+                  <td>4 / 4</td>
+                  <td class="green-light">0.94</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">1.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-1 col-xs-0"></div>
+        </div>
+        <br />
+
+        <!-- <div class="row">
           <div class="col-sm-12 wow fadeInDown">
             <div class="slider">
               <a class="control_next"><i class="fa fa-arrow-right"></i></a>
@@ -762,10 +746,10 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
         <br />
         <!-- Runtime -->
-        <h3>⏱️ Runtime Analysis</h3>
+        <h3>⏱️ V. Runtime Analysis</h3>
         <p>
           <b>vS-Graphs</b> achieves real-time performance with an average
           processing rate of <i>22 &plusmn; 3</i> FPS, exceeding the
