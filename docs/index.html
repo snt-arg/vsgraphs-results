@@ -211,6 +211,49 @@
         </p>
         <div class="row">
           <div class="col-sm-5 wow fadeInDown" style="padding: 20px">
+            <h5>🏷️ AutoSense Dataset</h5>
+            <!-- Tab links -->
+            <div>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq01')"
+              >
+                SR01
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq02')"
+              >
+                SR02
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq05')"
+              >
+                SR03
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq06_bc')"
+              >
+                MR01 (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq07_bc')"
+              >
+                MR02 (bc)
+              </button>
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="openGif(event, 'as_seq08_bc')"
+                id="defaultOpenGif"
+              >
+                MR03 (bc)
+              </button>
+            </div>
+            <br />
+
             <h5>🏷️ ICL Dataset</h5>
             <!-- Tab links -->
             <div>
@@ -271,50 +314,8 @@
               <button
                 class="btn btn-primary btn-sm"
                 onclick="openGif(event, 'icl_deer_wh_se')"
-                id="defaultOpenGif"
               >
                 deer_wh (bc+se)
-              </button>
-            </div>
-            <br />
-            <h5>🏷️ AutoSense Dataset</h5>
-            <!-- Tab links -->
-            <div>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq08')"
-              >
-                MR03
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq01')"
-              >
-                SR01
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq02')"
-              >
-                SR02
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq05')"
-              >
-                SR03
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq06')"
-              >
-                MR01
-              </button>
-              <button
-                class="btn btn-primary btn-sm"
-                onclick="openGif(event, 'as_seq07')"
-              >
-                MR02
               </button>
             </div>
             <br />
@@ -424,14 +425,14 @@
             <div id="as_seq05" class="tabcontent">
               <img src="./images/eval/scene_graph/as_seq05.gif" />
             </div>
-            <div id="as_seq06" class="tabcontent">
-              <img src="./images/eval/scene_graph/as_seq06.gif" />
+            <div id="as_seq06_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/as-seq06-bc.gif" />
             </div>
-            <div id="as_seq07" class="tabcontent">
-              <img src="./images/eval/scene_graph/as_seq07.gif" />
+            <div id="as_seq07_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/as-seq07-bc.gif" />
             </div>
-            <div id="as_seq08" class="tabcontent">
-              <img src="./images/eval/scene_graph/as_seq08.gif" />
+            <div id="as_seq08_bc" class="tabcontent">
+              <img src="./images/eval/scene_graph/as-seq08-bc.gif" />
             </div>
             <div id="openloris_o11_bc" class="tabcontent">
               <img src="./images/eval/scene_graph/openloris-off11-bc.gif" />
@@ -619,47 +620,59 @@
               </thead>
               <tbody>
                 <tr>
-                  <td rowspan="3"><b>vS-Graphs</b></td>
+                  <td rowspan="3">
+                    <b
+                      >S-Graphs (<a
+                        href="https://github.com/snt-arg/lidar_situational_graphs"
+                        target="_blank"
+                        >link</a
+                      >)</b
+                    >
+                  </td>
                   <td>MR01</td>
-                  <td>13 / 12</td>
-                  <td>3 / 3</td>
+                  <td>11 / 14</td>
+                  <td>4 / 4</td>
+                  <td class="green-light"><b>0.92</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
                   <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
                   <td>MR02</td>
                   <td>12 / 13</td>
-                  <td>3 / 3</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
+                  <td>4 / 4</td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
                   <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
                   <td>MR03</td>
-                  <td>20 / 17</td>
-                  <td>4 / 4</td>
-                  <td class="green-light">0.89</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-light">0.94</td>
-                  <td class="green-dark">1.00</td>
+                  <td>20 / 22</td>
+                  <td>6 / 6</td>
+                  <td class="green-light">0.90</td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-light">0.95</td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
-                  <td rowspan="3"><b>Hydra</b></td>
+                  <td rowspan="3"><b>Hydra (<a
+                        href="https://github.com/MIT-SPARK/Hydra"
+                        target="_blank"
+                        >link</a
+                      >)</b></td>
                   <td>MR01</td>
                   <td>N/A</td>
-                  <td>3 / 3</td>
+                  <td>4 / 4</td>
                   <td>N/A</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                   <td>N/A</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
                   <td>MR02</td>
                   <td>N/A</td>
-                  <td>5 / 3</td>
+                  <td>6 / 4</td>
                   <td>N/A</td>
                   <td class="yellow">0.75</td>
                   <td>N/A</td>
@@ -668,39 +681,43 @@
                 <tr>
                   <td>MR03</td>
                   <td>N/A</td>
-                  <td>4 / 4</td>
+                  <td>6 / 6</td>
                   <td>N/A</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                   <td>N/A</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark">0.80</td>
                 </tr>
                 <tr>
-                  <td rowspan="3"><b>vGraphs (ours)</b></td>
+                  <td rowspan="3"><b>vGraphs (<a
+                        href="https://github.com/snt-arg/visual_sgraphs"
+                        target="_blank"
+                        >link</a
+                      >)</b></td>
                   <td>MR01</td>
-                  <td>14 / 12</td>
-                  <td>3 / 3</td>
+                  <td>13 / 14</td>
+                  <td>4 / 4</td>
                   <td class="green-light">0.86</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
                   <td>MR02</td>
-                  <td>14 / 13</td>
-                  <td>3 / 3</td>
+                  <td>13 / 13</td>
+                  <td>4 / 4</td>
                   <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                   <td class="green-light">0.92</td>
-                  <td class="green-dark">1.00</td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
                   <td>MR03</td>
-                  <td>18 / 17</td>
-                  <td>4 / 4</td>
-                  <td class="green-light">0.94</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
-                  <td class="green-dark">1.00</td>
+                  <td>23 / 22</td>
+                  <td>6 / 6</td>
+                  <td class="green-light"><b>0.96</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
+                  <td class="green-dark"><b>1.00</b></td>
                 </tr>
               </tbody>
             </table>
