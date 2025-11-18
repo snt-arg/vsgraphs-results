@@ -54,7 +54,6 @@
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               <li class="scroll active"><a href="#home">Home</a></li>
-              <li class="scroll"><a href="#contribution">Contributions</a></li>
               <li class="scroll"><a href="#about">Evaluations</a></li>
               <li class="scroll"><a href="#team">Team</a></li>
               <li class="scroll"><a href="#testimonial">Citation</a></li>
@@ -83,103 +82,12 @@
                 target="_blank"
                 ><i class="fa fa-file-pdf-o fa-md"></i> PDF on ArXiv</a
               >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="download-now" id="contribution">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title wow fadeInDown">✨ Contributions</h2>
-          <p class="wow fadeInDown">
-            The main contributions of this approach can be classified into
-            separate
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="features">
-                <div
-                  class="col-md-6 wow fadeInUp"
-                  data-wow-duration="300ms"
-                  data-wow-delay="0ms"
-                >
-                  <div>
-                    <i class="fa fa-wrench"></i>
-                  </div>
-                  <div class="media service-box">
-                    <div class="media-body">
-                      <h4 class="media-heading">A Visual SLAM Framework</h4>
-                      <p>
-                        A multi-threaded real-time VSLAM, able to recognize,
-                        localize, and map building components for less pose and
-                        localization errors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 wow fadeInUp"
-                  data-wow-duration="300ms"
-                  data-wow-delay="100ms"
-                >
-                  <div>
-                    <i class="fa fa-cogs"></i>
-                  </div>
-                  <div class="media service-box">
-                    <div class="media-body">
-                      <h4 class="media-heading">Rich Map Reconstruction</h4>
-                      <p>
-                        A novel methodology for extracting structural elements
-                        (i.e., rooms and corridors) from detected building
-                        components (i.e., walls and grounds)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 wow fadeInUp"
-                  data-wow-duration="300ms"
-                  data-wow-delay="200ms"
-                >
-                  <div>
-                    <i class="fa fa-area-chart"></i>
-                  </div>
-                  <div class="media service-box">
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        Environment-Specific Element Validation
-                      </h4>
-                      <p>
-                        An algorithm for verifying and enriching geometric
-                        objects with their corresponding semantic entities
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 fadeInUp"
-                  data-wow-duration="300ms"
-                  data-wow-delay="300ms"
-                >
-                  <div>
-                    <i class="fa fa-trophy"></i>
-                  </div>
-                  <div class="media service-box">
-                    <div class="media-body">
-                      <h4 class="media-heading">Real-world Experiments</h4>
-                      <p>
-                        Conducting real-world experiments under various indoor
-                        conditions to assess the effectiveness of the proposed
-                        approach
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://youtu.be/5kbgUucvQos?si=og5HFnB15UOQ1_sL"
+                target="_blank"
+                ><i class="fa fa-youtube-play fa-md"></i> Video on YouTube</a
+              >
             </div>
           </div>
         </div>
@@ -599,64 +507,367 @@
         <!-- Mapping -->
         <h3>📍 III. Mapping Performance</h3>
         <p>
-          Analyzing the accuracy of the reconstructed maps against the ground
-          truch <b>across eight iterations</b> shows that
-          <b>vS-Graphs</b> performs more robost compared to its baseline,
-          ORB-SLAM 3.0. The performance is measured using Root Mean Square Error
-          (RMSE) reported in <i>meters</i>. <b>vS-Graphs</b> achieves superior
-          performance in terms of RMSE, despite generating maps with around
+          Root Mean Square Error (RMSE) values for <b>ORB-SLAM 3.0</b> and
+          <b>vS-Graphs</b> across different sequences of the AutoSense dataset
+          (over eight iterations). The results indicate that
+          <b>vS-Graphs</b> generally achieve lower RMSE values, with around
           <b>10.15%</b> fewer points (on average).
         </p>
         <div class="row">
           <div class="col-sm-12 wow fadeInDown">
-            <div class="slider" style="height: 100px">
-              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
-              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
-              <ul>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR01</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR01.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR02</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR02.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence SR03</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_SR03.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR01</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR01.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR02</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR02.png"
-                    style="width: 90%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR03</h5>
-                  <img
-                    src="./images/eval/mapping/rmse_boxplot_MR03.png"
-                    style="width: 90%"
-                  />
-                </li>
-              </ul>
-            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Sequence</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <!-- vS-Graphs -->
+                <tr>
+                  <td rowspan="6">
+                    <b
+                      >vGraphs (<a
+                        href="https://github.com/snt-arg/visual_sgraphs"
+                        target="_blank"
+                        >link</a
+                      >)</b
+                    >
+                  </td>
+                  <td>SR01</td>
+                  <td>0.2598</td>
+                  <td>0.3102</td>
+                  <td>0.2608</td>
+                  <td>0.3454</td>
+                  <td>0.3409</td>
+                  <td>0.3122</td>
+                  <td>0.2891</td>
+                  <td>0.3246</td>
+                </tr>
+                <tr>
+                  <td>SR02</td>
+                  <td>0.2333</td>
+                  <td>0.2165</td>
+                  <td>0.2301</td>
+                  <td>0.2494</td>
+                  <td>0.2499</td>
+                  <td>0.2414</td>
+                  <td>0.2564</td>
+                  <td>0.2853</td>
+                </tr>
+                <tr>
+                  <td>SR03</td>
+                  <td>0.2749</td>
+                  <td>0.5544</td>
+                  <td>0.2426</td>
+                  <td>0.3509</td>
+                  <td>0.2837</td>
+                  <td>0.3801</td>
+                  <td>0.2725</td>
+                  <td>0.2920</td>
+                </tr>
+                <tr>
+                  <td>MR01</td>
+                  <td>4.3774</td>
+                  <td>5.5194</td>
+                  <td>6.2763</td>
+                  <td>4.7143</td>
+                  <td>6.8155</td>
+                  <td>4.4640</td>
+                  <td>4.8322</td>
+                  <td>4.5823</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>1.1153</td>
+                  <td>1.1836</td>
+                  <td>0.9430</td>
+                  <td>0.9017</td>
+                  <td>0.9210</td>
+                  <td>1.0799</td>
+                  <td>0.9575</td>
+                  <td>0.7648</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>1.2933</td>
+                  <td>0.2978</td>
+                  <td>0.3472</td>
+                  <td>0.3137</td>
+                  <td>1.1864</td>
+                  <td>0.2894</td>
+                  <td>0.4122</td>
+                  <td>0.2721</td>
+                </tr>
+
+                <!-- ORB-SLAM 3.0 -->
+                <tr>
+                  <td rowspan="6">
+                    <b
+                      >ORB-SLAM 3.0 (<a
+                        href="https://github.com/UZ-SLAMLab/ORB_SLAM3"
+                        target="_blank"
+                        >link</a
+                      >)</b
+                    >
+                  </td>
+                  <td>SR01</td>
+                  <td>0.2772</td>
+                  <td>0.4435</td>
+                  <td>0.3509</td>
+                  <td>0.3964</td>
+                  <td>0.2753</td>
+                  <td>0.3006</td>
+                  <td>0.3995</td>
+                  <td>0.3602</td>
+                </tr>
+                <tr>
+                  <td>SR02</td>
+                  <td>0.3111</td>
+                  <td>0.2781</td>
+                  <td>0.2862</td>
+                  <td>0.2668</td>
+                  <td>0.3000</td>
+                  <td>0.2955</td>
+                  <td>0.2408</td>
+                  <td>0.2787</td>
+                </tr>
+                <tr>
+                  <td>SR03</td>
+                  <td>0.3451</td>
+                  <td>0.3380</td>
+                  <td>0.3279</td>
+                  <td>0.2931</td>
+                  <td>0.3054</td>
+                  <td>0.3728</td>
+                  <td>0.3076</td>
+                  <td>0.3435</td>
+                </tr>
+                <tr>
+                  <td>MR01</td>
+                  <td>5.1266</td>
+                  <td>5.0866</td>
+                  <td>5.6484</td>
+                  <td>5.6531</td>
+                  <td>4.7557</td>
+                  <td>6.2066</td>
+                  <td>5.2847</td>
+                  <td>5.2242</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>1.1828</td>
+                  <td>1.1521</td>
+                  <td>0.9291</td>
+                  <td>0.9648</td>
+                  <td>0.9379</td>
+                  <td>1.0269</td>
+                  <td>1.2719</td>
+                  <td>1.0016</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>0.2869</td>
+                  <td>2.5426</td>
+                  <td>1.5765</td>
+                  <td>2.3271</td>
+                  <td>2.0381</td>
+                  <td>0.2725</td>
+                  <td>0.6926</td>
+                  <td>0.4120</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Number of map points generated by <b>ORB-SLAM 3.0</b> and <b>vS-Graphs</b> on the
+            AutoSense dataset (over eight iterations). The measurements show
+            that <b>vS-Graphs</b> produces fewer points than <b>ORB-SLAM 3.0</b>, while
+            positively impacting the mapping accuracy.
+          </p>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Sequence</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <!-- vS-Graphs -->
+                <tr>
+                  <td rowspan="6">
+                    <b
+                      >vGraphs (<a
+                        href="https://github.com/snt-arg/visual_sgraphs"
+                        target="_blank"
+                        >link</a
+                      >)</b
+                    >
+                  </td>
+                  <td>SR01</td>
+                  <td>6759</td>
+                  <td>6704</td>
+                  <td>6744</td>
+                  <td>6741</td>
+                  <td>6875</td>
+                  <td>6804</td>
+                  <td>6780</td>
+                  <td>6842</td>
+                </tr>
+                <tr>
+                  <td>SR02</td>
+                  <td>7304</td>
+                  <td>7120</td>
+                  <td>7420</td>
+                  <td>7457</td>
+                  <td>7421</td>
+                  <td>7212</td>
+                  <td>7382</td>
+                  <td>7160</td>
+                </tr>
+                <tr>
+                  <td>SR03</td>
+                  <td>11764</td>
+                  <td>11591</td>
+                  <td>11937</td>
+                  <td>12054</td>
+                  <td>12156</td>
+                  <td>11844</td>
+                  <td>11471</td>
+                  <td>11475</td>
+                </tr>
+                <tr>
+                  <td>MR01</td>
+                  <td>20607</td>
+                  <td>20682</td>
+                  <td>19692</td>
+                  <td>20714</td>
+                  <td>21042</td>
+                  <td>20274</td>
+                  <td>19433</td>
+                  <td>20546</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>16838</td>
+                  <td>16622</td>
+                  <td>16479</td>
+                  <td>16563</td>
+                  <td>17065</td>
+                  <td>17200</td>
+                  <td>16905</td>
+                  <td>17274</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>48364</td>
+                  <td>46237</td>
+                  <td>48250</td>
+                  <td>47850</td>
+                  <td>47149</td>
+                  <td>49008</td>
+                  <td>48442</td>
+                  <td>45224</td>
+                </tr>
+
+                <!-- ORB-SLAM 3.0 -->
+                <tr>
+                  <td rowspan="6">
+                    <b
+                      >ORB-SLAM 3.0 (<a
+                        href="https://github.com/UZ-SLAMLab/ORB_SLAM3"
+                        target="_blank"
+                        >link</a
+                      >)</b
+                    >
+                  </td>
+                  <td>SR01</td>
+                  <td>6931</td>
+                  <td>7085</td>
+                  <td>7057</td>
+                  <td>6903</td>
+                  <td>7012</td>
+                  <td>6894</td>
+                  <td>7063</td>
+                  <td>7130</td>
+                </tr>
+                <tr>
+                  <td>SR02</td>
+                  <td>7639</td>
+                  <td>7378</td>
+                  <td>7548</td>
+                  <td>7712</td>
+                  <td>7540</td>
+                  <td>7590</td>
+                  <td>7363</td>
+                  <td>7377</td>
+                </tr>
+                <tr>
+                  <td>SR03</td>
+                  <td>13140</td>
+                  <td>12631</td>
+                  <td>12818</td>
+                  <td>12903</td>
+                  <td>13021</td>
+                  <td>13187</td>
+                  <td>12613</td>
+                  <td>12990</td>
+                </tr>
+                <tr>
+                  <td>MR01</td>
+                  <td>22564</td>
+                  <td>22685</td>
+                  <td>21916</td>
+                  <td>22688</td>
+                  <td>22552</td>
+                  <td>22759</td>
+                  <td>22701</td>
+                  <td>22506</td>
+                </tr>
+                <tr>
+                  <td>MR02</td>
+                  <td>18816</td>
+                  <td>18196</td>
+                  <td>17899</td>
+                  <td>18547</td>
+                  <td>17722</td>
+                  <td>18492</td>
+                  <td>18117</td>
+                  <td>17643</td>
+                </tr>
+                <tr>
+                  <td>MR03</td>
+                  <td>54797</td>
+                  <td>55342</td>
+                  <td>56531</td>
+                  <td>55499</td>
+                  <td>56056</td>
+                  <td>55853</td>
+                  <td>56187</td>
+                  <td>54545</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <br />
@@ -664,16 +875,9 @@
         <!-- Scene understanding -->
         <h3>🖼️ IV. Scene Understanding Performance</h3>
         <p>
-          Below evaluations show the performance of <b>vS-Graphs</b> in terms of
-          scene understanding. The results are presented in the form of
-          reconstructed maps enriched with <b>building components</b> (<i
-            >i.e.,</i
-          >
-          walls and ground surfaces). These building components are later used
-          to infer the <b>structural elements</b> of the environment (<i
-            >i.e.,</i
-          >
-          rooms and floors).
+          The results are in the form of reconstructed maps enriched with
+          <b>building components</b>, which are later used to infer the
+          <b>structural elements</b> of the environment.
         </p>
         <br />
 
@@ -738,11 +942,15 @@
                   <td class="green-dark"><b>1.00</b></td>
                 </tr>
                 <tr>
-                  <td rowspan="3"><b>Hydra (<a
+                  <td rowspan="3">
+                    <b
+                      >Hydra (<a
                         href="https://github.com/MIT-SPARK/Hydra"
                         target="_blank"
                         >link</a
-                      >)</b></td>
+                      >)</b
+                    >
+                  </td>
                   <td>MR01</td>
                   <td>N/A</td>
                   <td>4 / 4</td>
@@ -770,11 +978,15 @@
                   <td class="green-dark">0.80</td>
                 </tr>
                 <tr>
-                  <td rowspan="3"><b>vGraphs (<a
+                  <td rowspan="3">
+                    <b
+                      >vGraphs (<a
                         href="https://github.com/snt-arg/visual_sgraphs"
                         target="_blank"
                         >link</a
-                      >)</b></td>
+                      >)</b
+                    >
+                  </td>
                   <td>MR01</td>
                   <td>13 / 14</td>
                   <td>4 / 4</td>
@@ -807,55 +1019,16 @@
           <div class="col-sm-1 col-xs-0"></div>
         </div>
         <br />
-
-        <!-- <div class="row">
-          <div class="col-sm-12 wow fadeInDown">
-            <div class="slider">
-              <a class="control_next"><i class="fa fa-arrow-right"></i></a>
-              <a class="control_prev"><i class="fa fa-arrow-left"></i></a>
-              <ul>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR01 (2D View)</h5>
-                  <img
-                    src="./images/eval/scene_graph_se/seq06_orbit.png"
-                    style="width: 80%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR01 (3D View)</h5>
-                  <img
-                    src="./images/eval/scene_graph_se/seq06_ortho.png"
-                    style="width: 80%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR02 (2D View)</h5>
-                  <img
-                    src="./images/eval/scene_graph_se/seq07_orbit.png"
-                    style="width: 80%"
-                  />
-                </li>
-                <li>
-                  <h5>AutoSense Dataset - Sequence MR02 (3D View)</h5>
-                  <img
-                    src="./images/eval/scene_graph_se/seq07_ortho.png"
-                    style="width: 80%"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
         <br />
+
         <!-- Runtime -->
         <h3>⏱️ V. Runtime Analysis</h3>
         <p>
           <b>vS-Graphs</b> achieves real-time performance with an average
-          processing rate of <i>22 &plusmn; 3</i> FPS, exceeding the
-          <i>20 FPS</i> threshold for real-time operation. Below, you can see
-          the timeline of thread execution while processing a sample dataset
-          instance.
+          processing rate of <b><i>22 &plusmn; 3</i> FPS</b>, exceeding the
+          <i>20 FPS</i> threshold for real-time operation.
         </p>
+        <br />
         <div class="row" style="text-align: center">
           <img src="./images/eval/profiling.png" style="width: 80%" />
         </div>
@@ -1071,7 +1244,7 @@
     <section class="testimonial-area" id="testimonial">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title wow fadeInDown">📝 Citation</h2>
+          <h2 class="section-title wow fadeInDown">📚 Citation</h2>
         </div>
         <div class="row">
           <div class="col-md-8 col-sm-12">
@@ -1081,12 +1254,14 @@
                   <blockquote>
                     <span>@article{vsgraphs,</span><br />
                     <span style="margin-left: 10px"
-                      >title={vS-Graphs: Integrating Visual SLAM and Situational
-                      Graphs through Multi-level Scene Understanding},</span
+                      >title={vS-Graphs: Tightly Coupling Visual SLAM and 3D
+                      Scene Graphs Exploiting Hierarchical Scene
+                      Understanding},</span
                     ><br />
                     <span style="margin-left: 10px"
-                      >author={A. Tourani, S. Ejaz, H. Bavle, D.
-                      Morilla-Cabello, J.L. Sanchez-Lopez, H. Voos},</span
+                      >author={A. Tourani, S. Ejaz, H. Bavle, M.
+                      Fernandez-Cortizas, D. Morilla-Cabello, J.L.
+                      Sanchez-Lopez, H. Voos},</span
                     ><br />
                     <span style="margin-left: 10px">year={2025},</span><br />
                     <span style="margin-left: 10px"
