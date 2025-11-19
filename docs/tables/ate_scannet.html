@@ -1,64 +1,80 @@
 <div id="ATE_ScanNet" class="tableWrapper">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">ScanNet Dataset</th>
-                <th colspan="4">Framework</th>
-            </tr>
-            <tr>
-                <th>Sequence</th>
-                <th>Duration (sec.)</th>
-                <th>ORB-SLAM 3.0</th>
-                <th>BAD SLAM</th>
-                <th>ElasticFusion</th>
-                <th>vS-Graphs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- ScanNet -->
-            <tr>
-                <td class="tableFirstColumn">scene0041_01</td>
-                <td>75.0</td>
-                <td><b>0.143</b></td>
-                <td>0.222</td>
-                <td>0.220</td>
-                <td><u>0.143</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">scene0200_00</td>
-                <td>37.0</td>
-                <td><u>0.049</u></td>
-                <td>-</td>
-                <td>-</td>
-                <td><b>0.047</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">scene0560_00</td>
-                <td>40.8</td>
-                <td><u>0.088</u></td>
-                <td>0.099</td>
-                <td><b>0.087</b></td>
-                <td>0.092</td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">scene0614_01</td>
-                <td>36.2</td>
-                <td><u>0.135</u></td>
-                <td>0.139</td>
-                <td>0.202</td>
-                <td><b>0.125</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">scene0626_00</td>
-                <td>21.1</td>
-                <td><u>0.096</u></td>
-                <td>0.273</td>
-                <td>0.189</td>
-                <td><b>0.095</b></td>
-            </tr>
-        </tbody>
-    </table>
-    <div>
-        ⚠️ The minimum completion rate of each sequences is set to 50 percent. The best and second-best results are boldfaced and underlined, respectively
-    </div>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">ScanNet Dataset</th>
+        <th colspan="7">Framework</th>
+      </tr>
+      <tr>
+        <th>Sequence</th>
+        <th>Duration (sec.)</th>
+        <th>ORB-SLAM 3.0</th>
+        <th>BAD SLAM</th>
+        <th>ElasticFusion</th>
+        <th>vS-Graphs BC (YOSO)</th>
+        <th>vS-Graphs BC (PFCN)</th>
+        <th>vS-Graphs SE (YOSO)</th>
+        <th>vS-Graphs SE (PFCN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ScanNet -->
+      <tr>
+        <td class="tableFirstColumn">scene0041_01</td>
+        <td>75.0</td>
+        <td>14.26</td>
+        <td>22.20</td>
+        <td>21.96</td>
+        <td>14.29</td>
+        <td>14.06</td>
+        <td><b>13.56</b></td>
+        <td><u>13.78</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">scene0200_00</td>
+        <td>37.0</td>
+        <td>4.88</td>
+        <td>-</td>
+        <td>-</td>
+        <td>4.67</td>
+        <td>4.65</td>
+        <td><u>4.55</u></td>
+        <td><b>4.42</b></td>
+      </tr>
+      <!-- <tr>
+        <td class="tableFirstColumn">scene0560_00</td>
+        <td>40.8</td>
+        <td><u>0.088</u></td>
+        <td>0.099</td>
+        <td><b>0.087</b></td>
+        <td>0.092</td>
+      </tr> -->
+      <tr>
+        <td class="tableFirstColumn">scene0614_01</td>
+        <td>36.2</td>
+        <td>13.55</td>
+        <td>13.90</td>
+        <td>20.23</td>
+        <td>12.50</td>
+        <td>13.38</td>
+        <td><b>12.36</b></td>
+        <td><u>12.45</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">scene0626_00</td>
+        <td>21.1</td>
+        <td>9.60</td>
+        <td>27.30</td>
+        <td>18.91</td>
+        <td>9.50</td>
+        <td>9.22</td>
+        <td><u>8.73</u></td>
+        <td><b>8.71</b></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    ⚠️ The minimum completion rate of each sequences is set to 50 percent. The
+    best and second-best results are boldfaced and underlined, respectively
+  </div>
 </div>

@@ -1,80 +1,99 @@
 <div id="ATE_TUM" class="tableWrapper">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">TUM-RGBD Dataset</th>
-                <th colspan="4">Framework</th>
-            </tr>
-            <tr>
-                <th>Sequence</th>
-                <th>Duration (sec.)</th>
-                <th>ORB-SLAM 3.0</th>
-                <th>BAD SLAM</th>
-                <th>ElasticFusion</th>
-                <th>vS-Graphs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- TUM-RGBD -->
-            <tr>
-                <td class="tableFirstColumn">frb1-desk</td>
-                <td>23.8</td>
-                <td><u>0.021</u></td>
-                <td>0.023</td>
-                <td>0.026</td>
-                <td><b>0.020</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb1-desk2</td>
-                <td>25.1</td>
-                <td>0.032</td>
-                <td><b>0.029</b></td>
-                <td>0.079</td>
-                <td><u>0.032</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb1-room</td>
-                <td>49.1</td>
-                <td><u>0.133</u></td>
-                <td>0.209</td>
-                <td>0.167</td>
-                <td><b>0.130</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb2-desk</td>
-                <td>99.0</td>
-                <td><b>0.032</b></td>
-                <td>0.082</td>
-                <td>0.046</td>
-                <td><u>0.033</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb2-desk-person</td>
-                <td>142.1</td>
-                <td><u>0.019</u></td>
-                <td>0.096</td>
-                <td>0.045</td>
-                <td><b>0.018</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb3-long-office</td>
-                <td>87.1</td>
-                <td><b>0.016</b></td>
-                <td>0.021</td>
-                <td>-</td>
-                <td><u>0.017</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">frb3-strct</td>
-                <td>31.9</td>
-                <td><u>0.016</u></td>
-                <td>0.021</td>
-                <td>0.017</td>
-                <td><b>0.015</b></td>
-            </tr>
-        </tbody>
-    </table>
-    <div>
-        ⚠️ The minimum completion rate of each sequences is set to 50 percent. The best and second-best results are boldfaced and underlined, respectively
-    </div>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">TUM-RGBD Dataset</th>
+        <th colspan="7">Framework</th>
+      </tr>
+      <tr>
+        <th>Sequence</th>
+        <th>Duration (sec.)</th>
+        <th>ORB-SLAM 3.0</th>
+        <th>BAD SLAM</th>
+        <th>ElasticFusion</th>
+        <th>vS-Graphs BC (YOSO)</th>
+        <th>vS-Graphs BC (PFCN)</th>
+        <th>vS-Graphs SE (YOSO)</th>
+        <th>vS-Graphs SE (PFCN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- TUM-RGBD -->
+      <tr>
+        <td class="tableFirstColumn">frb1-desk</td>
+        <td>23.8</td>
+        <td>2.07</td>
+        <td>2.20</td>
+        <td>2.55</td>
+        <td><u>1.98</u></td>
+        <td><b>1.96</b></td>
+        <td>2.04</td>
+        <td>2.03</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">frb1-desk2</td>
+        <td>25.1</td>
+        <td>3.23</td>
+        <td>2.90</td>
+        <td>7.87</td>
+        <td>3.19</td>
+        <td>3.19</td>
+        <td><u>2.89</u></td>
+        <td><b>2.85</b></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">frb1-room</td>
+        <td>49.1</td>
+        <td>13.25</td>
+        <td>20.90</td>
+        <td>16.75</td>
+        <td>13.02</td>
+        <td>13.29</td>
+        <td><b>5.13</b></td>
+        <td><u>6.77</u></td>
+      </tr>
+      <!-- <tr>
+        <td class="tableFirstColumn">frb2-desk</td>
+        <td>99.0</td>
+        <td><b>0.032</b></td>
+        <td>0.082</td>
+        <td>0.046</td>
+        <td><u>0.033</u></td>
+      </tr> -->
+      <tr>
+        <td class="tableFirstColumn">frb2-desk-person</td>
+        <td>142.1</td>
+        <td>1.90</td>
+        <td>9.60</td>
+        <td>4.51</td>
+        <td><u>1.79</u></td>
+        <td><b>1.78</b></td>
+        <td><u>1.79</u></td>
+        <td>1.81</td>
+      </tr>
+      <!-- <tr>
+        <td class="tableFirstColumn">frb3-long-office</td>
+        <td>87.1</td>
+        <td><b>0.016</b></td>
+        <td>0.021</td>
+        <td>-</td>
+        <td><u>0.017</u></td>
+      </tr> -->
+      <tr>
+        <td class="tableFirstColumn">frb3-strct</td>
+        <td>31.9</td>
+        <td>1.62</td>
+        <td>2.10</td>
+        <td>1.75</td>
+        <td>1.54</td>
+        <td><u>1.53</u></td>
+        <td><b>1.52</b></td>
+        <td>1.54</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    ⚠️ The minimum completion rate of each sequences is set to 50 percent. The
+    best and second-best results are boldfaced and underlined, respectively
+  </div>
 </div>
