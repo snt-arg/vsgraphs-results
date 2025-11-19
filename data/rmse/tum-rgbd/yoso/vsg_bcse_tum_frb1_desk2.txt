@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 2428 stamps and poses from: /media/alitourani/AT_SSD/Datasets/TUM_RGBD/GT/frb1_desk2.txt
+Loaded 213 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_tum_frb1_desk2.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 210 of max. 213 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/TUM_RGBD/GT/frb1_desk2.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_tum_frb1_desk2.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[ 0.92011198  0.13342242 -0.36822873]
+ [ 0.37646568 -0.56058922  0.73757258]
+ [-0.10801634 -0.81727485 -0.56603382]]
+Translation of alignment:
+[1.52538398 0.91957163 1.44738943]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 210 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.073177
+      mean	0.025944
+    median	0.024452
+       min	0.003949
+      rmse	0.028942
+       sse	0.175901
+       std	0.012826
+

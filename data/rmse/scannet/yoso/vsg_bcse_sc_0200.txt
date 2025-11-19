@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 1110 stamps and poses from: /media/alitourani/AT_SSD/Datasets/ScanNet/GT/scene0200_00.txt
+Loaded 224 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_sc_0200.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 224 of max. 224 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/ScanNet/GT/scene0200_00.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_sc_0200.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[ 0.12635873  0.63966088 -0.75820013]
+ [ 0.99181925 -0.0954216   0.08478969]
+ [-0.01811202 -0.7627114  -0.64648533]]
+Translation of alignment:
+[2.96668275 1.54457988 1.41988701]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 224 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.098649
+      mean	0.040979
+    median	0.034071
+       min	0.014036
+      rmse	0.045553
+       sse	0.464824
+       std	0.019896
+

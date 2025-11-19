@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 1309 stamps and poses from: /media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S2_Deer_WalkHead.txt
+Loaded 215 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/PFCN/vsg_icl_deerwh.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 215 of max. 215 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S2_Deer_WalkHead.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/PFCN/vsg_icl_deerwh.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[-0.12249643 -0.08428611  0.98888345]
+ [-0.99239881  0.02224859 -0.12103556]
+ [-0.01179964 -0.99619318 -0.08637081]]
+Translation of alignment:
+[-0.80448847 -1.73927315  1.2898941 ]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 215 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.213485
+      mean	0.046013
+    median	0.035305
+       min	0.003448
+      rmse	0.061471
+       sse	0.812405
+       std	0.040761
+

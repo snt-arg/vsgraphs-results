@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 2050 stamps and poses from: /media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S8_Deer_MAVFast.txt
+Loaded 92 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/PFCN/vsg_icl_deermavf.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 92 of max. 92 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S8_Deer_MAVFast.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/PFCN/vsg_icl_deermavf.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[-0.98393004  0.03483338 -0.1751237 ]
+ [ 0.17586188  0.01937199 -0.98422423]
+ [-0.03089136 -0.99920537 -0.02518655]]
+Translation of alignment:
+[-1.56631525  0.90411759  1.20858833]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 92 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.024107
+      mean	0.011242
+    median	0.009727
+       min	0.002150
+      rmse	0.012605
+       sse	0.014617
+       std	0.005702
+

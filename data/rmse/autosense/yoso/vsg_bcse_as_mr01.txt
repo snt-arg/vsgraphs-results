@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 4562 stamps and poses from: /media/alitourani/AT_SSD/Datasets/LuxVSD/GT/AS/AS-Seq06.txt
+Loaded 737 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_as_mr01.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 232 of max. 737 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/LuxVSD/GT/AS/AS-Seq06.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_as_mr01.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[-0.04338634 -0.085673    0.9953782 ]
+ [-0.99810874  0.04714708 -0.03944738]
+ [-0.04354961 -0.99520716 -0.08755651]]
+Translation of alignment:
+[ 0.00793328 -0.0034753  -0.0328871 ]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 232 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.279375
+      mean	0.117070
+    median	0.114558
+       min	0.026709
+      rmse	0.127467
+       sse	3.769483
+       std	0.050421
+

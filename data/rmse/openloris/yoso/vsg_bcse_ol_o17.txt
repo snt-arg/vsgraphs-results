@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+Loaded 9113 stamps and poses from: /media/alitourani/AT_SSD/Datasets/OpenLORIS-Scene/GT/per-sequence/office1-7/groundtruth.txt
+Loaded 119 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_ol_o17.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 119 of max. 119 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/OpenLORIS-Scene/GT/per-sequence/office1-7/groundtruth.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/YOSO/vsg_ol_o17.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[-0.96192084  0.01313057 -0.2730126 ]
+ [ 0.27311936  0.00713819 -0.96195367]
+ [-0.01068218 -0.99988831 -0.01045259]]
+Translation of alignment:
+[ 1.5120792  -0.05121714 -1.08045505]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 119 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.229945
+      mean	0.120256
+    median	0.128355
+       min	0.009163
+      rmse	0.130003
+       sse	2.011191
+       std	0.049388
+

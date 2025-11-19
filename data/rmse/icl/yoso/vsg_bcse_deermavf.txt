@@ -1,0 +1,63 @@
+--------------------------------------------------------------------------------
+Loaded 2050 stamps and poses from: /media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S8_Deer_MAVFast.txt
+Loaded 93 stamps and poses from: /media/alitourani/AT_SSD/Datasets/eval_res/vsg_icl_deermavf.txt
+--------------------------------------------------------------------------------
+Synchronizing trajectories...
+Found 93 of max. 93 possible matching timestamps between...
+	/media/alitourani/AT_SSD/Datasets/ICL/GT/Modified/S8_Deer_MAVFast.txt
+and:	/media/alitourani/AT_SSD/Datasets/eval_res/vsg_icl_deermavf.txt
+..with max. time diff.: 0.01 (s) and time offset: 0.0 (s).
+--------------------------------------------------------------------------------
+Aligning using Umeyama's method...
+Rotation of alignment:
+[[-0.98315137  0.03373591 -0.1796532 ]
+ [ 0.18044845  0.02220451 -0.98333378]
+ [-0.02918455 -0.99918409 -0.02791799]]
+Translation of alignment:
+[-1.57110562  0.90431619  1.2013536 ]
+Scale correction: 1.0
+--------------------------------------------------------------------------------
+Compared 93 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	0.043839
+      mean	0.019995
+    median	0.016404
+       min	0.005440
+      rmse	0.022534
+       sse	0.047222
+       std	0.010391
+
+[ERROR] Unhandled error in evo.main_ape
+Traceback (most recent call last):
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/evo/entry_points.py", line 95, in launch
+    main_module.run(args)
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/evo/main_ape.py", line 171, in run
+    common.plot_result(args, result, traj_ref,
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/evo/common_ape_rpe.py", line 152, in plot_result
+    from evo.tools import plot
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/evo/tools/plot.py", line 86, in <module>
+    apply_settings(SETTINGS)
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/evo/tools/plot.py", line 61, in apply_settings
+    mpl.use(settings.plot_backend)
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/matplotlib/__init__.py", line 1284, in use
+    plt.switch_backend(name)
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/matplotlib/pyplot.py", line 424, in switch_backend
+    module = backend_registry.load_backend_module(newbackend)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/matplotlib/backends/registry.py", line 317, in load_backend_module
+    return importlib.import_module(module_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/matplotlib/backends/backend_tkagg.py", line 1, in <module>
+    from . import _backend_tk
+  File "/home/alitourani/ROS/Converter/venv/lib/python3.12/site-packages/matplotlib/backends/_backend_tk.py", line 9, in <module>
+    import tkinter as tk
+ModuleNotFoundError: No module named 'tkinter'
+
+[ERROR] evo module evo.main_ape crashed - no logfile written (disabled)
