@@ -1,74 +1,96 @@
 <div id="ATE_AS" class="tableWrapper">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">AutoSense Dataset</th>
-                <th colspan="4">Framework</th>
-            </tr>
-            <tr>
-                <th>Sequence</th>
-                <th>Duration (sec.)</th>
-                <th>ORB-SLAM 3.0</th>
-                <th>BAD SLAM</th>
-                <th>ElasticFusion</th>
-                <th>vS-Graphs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- AutoSense -->
-            <tr>
-                <td class="tableFirstColumn">SR01</td>
-                <td>61.0</td>
-                <td><u>0.080</u></td>
-                <td>0.130</td>
-                <td><b>0.066</b></td>
-                <td>0.081</td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">SR02</td>
-                <td>80.0</td>
-                <td><u>0.088</u></td>
-                <td>0.135</td>
-                <td>-</td>
-                <td><b>0.082</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">SR03</td>
-                <td>170.0</td>
-                <td><u>0.109</u></td>
-                <td>0.557</td>
-                <td>-</td>
-                <td><b>0.107</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">MR01</td>
-                <td>305.0</td>
-                <td><b>0.153</b></td>
-                <td>0.413</td>
-                <td>-</td>
-                <td><u>0.154</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">MR02</td>
-                <td>210.0</td>
-                <td><u>0.240</u></td>
-                <td>-</td>
-                <td>0.535</td>
-                <td><b>0.217</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">MR03</td>
-                <td>783</td>
-                <td><u>0.222</u></td>
-                <td>0.812</td>
-                <td>-</td>
-                <td><b>0.220</b></td>
-            </tr>
-        </tbody>
-    </table>
-    <div>
-        ⚠️ The minimum completion rate of each sequences is set to 50 percent. The best and second-best results are boldfaced and underlined, respectively
-    </div>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">AutoSense Dataset</th>
+        <th colspan="7">Framework</th>
+      </tr>
+      <tr>
+        <th>Sequence</th>
+        <th>Duration (sec.)</th>
+        <th>ORB-SLAM 3.0</th>
+        <th>BAD SLAM</th>
+        <th>ElasticFusion</th>
+        <th>vS-Graphs BC (YOSO)</th>
+        <th>vS-Graphs BC (PFCN)</th>
+        <th>vS-Graphs SE (YOSO)</th>
+        <th>vS-Graphs SE (PFCN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- AutoSense -->
+      <tr>
+        <td class="tableFirstColumn">SR01</td>
+        <td>61.0</td>
+        <td>7.98</td>
+        <td>13.00</td>
+        <td><b>6.62</b></td>
+        <td>8.10</td>
+        <td>8.16</td>
+        <td><u>7.34</u></td>
+        <td>7.63</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">SR02</td>
+        <td>80.0</td>
+        <td>8.75</td>
+        <td>13.50</td>
+        <td>-</td>
+        <td><b>8.21</b></td>
+        <td>8.29</td>
+        <td><u>8.23</u></td>
+        <td>8.26</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">SR03</td>
+        <td>170.0</td>
+        <td>10.90</td>
+        <td>55.70</td>
+        <td>-</td>
+        <td><u>10.70</u></td>
+        <td>10.71</td>
+        <td><b>10.51</b></td>
+        <td>11.04</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">MR01</td>
+        <td>305.0</td>
+        <td>15.26</td>
+        <td>41.30</td>
+        <td>-</td>
+        <td>15.44</td>
+        <td>14.98</td>
+        <td><b>12.23</b></td>
+        <td><u>12.75</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">MR02</td>
+        <td>210.0</td>
+        <td>23.97</td>
+        <td>-</td>
+        <td>53.48</td>
+        <td>21.68</td>
+        <td>23.78</td>
+        <td><b>20.13</b></td>
+        <td><u>21.19</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">MR03</td>
+        <td>783</td>
+        <td>22.19</td>
+        <td>81.21</td>
+        <td>-</td>
+        <td>22.00</td>
+        <td>19.23</td>
+        <td><b>17.70</b></td>
+        <td><u>17.84</u></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    ⚠️ The minimum completion rate of each sequences is set to 50 percent. The
+    best and second-best results are boldfaced and underlined, respectively
+  </div>
 </div>
 
 <!-- Hint: A01=SR01, A02=SR02, A05=SR03, A06=MR01, A07=MR02, A08=MR03 -->
