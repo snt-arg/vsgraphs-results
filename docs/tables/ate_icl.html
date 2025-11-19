@@ -1,80 +1,80 @@
 <div id="ATE_ICL" class="tableWrapper">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">ICL Dataset</th>
-                <th colspan="4">Framework</th>
-            </tr>
-            <tr>
-                <th>Sequence</th>
-                <th>Duration (sec.)</th>
-                <th>ORB-SLAM 3.0</th>
-                <th>BAD SLAM</th>
-                <th>ElasticFusion</th>
-                <th>vS-Graphs BC (YOSO)</th>
-                <th>vS-Graphs BC (PFCN)</th>
-                <th>vS-Graphs SE (YOSO)</th>
-                <th>vS-Graphs SE (PFCN)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- ICL -->
-            <tr>
-                <td class="tableFirstColumn">deer-ground</td>
-                <td>79.9</td>
-                <td><b>0.74</b></td>
-                <td>147.60</td>
-                <td>14.50</td>
-                <td>0.81</td>
-                <td>0.91</td>
-                <td><u>0.78</u></td>
-                <td>0.89</td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">deer-walk-head</td>
-                <td>65.3</td>
-                <td>6.96</td>
-                <td>-</td>
-                <td>82.50</td>
-                <td><u>6.08</u></td>
-                <td>6.23</td>
-                <td><b>5.96</b></td>
-                <td>6.14</td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">deer-walk</td>
-                <td>64.0</td>
-                <td>9.91</td>
-                <td>147.40</td>
-                <td>62.00</td>
-                <td>8.82</td>
-                <td>12.19</td>
-                <td><b>2.44</b></td>
-                <td><u>4.02</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">deer-running</td>
-                <td>28.4</td>
-                <td>6.92</td>
-                <td>-</td>
-                <td>78.70</td>
-                <td>5.34</td>
-                <td>5.47</td>
-                <td><b>2.83</b></td>
-                <td><u>3.34</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">deer-mav-fast</td>
-                <td>102.45</td>
-                <td>2.67</td>
-                <td>4.60</td>
-                <td>-</td>
-                <td>2.65</td>
-                <td><u>2.07</u></td>
-                <td>2.23</td>
-                <td><b>1.26</b></td>
-            </tr>
-            <!-- <tr>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">ICL Dataset</th>
+        <th colspan="7">Framework</th>
+      </tr>
+      <tr>
+        <th>Sequence</th>
+        <th>Duration (sec.)</th>
+        <th>ORB-SLAM 3.0</th>
+        <th>BAD SLAM</th>
+        <th>ElasticFusion</th>
+        <th>vS-Graphs BC (YOSO)</th>
+        <th>vS-Graphs BC (PFCN)</th>
+        <th>vS-Graphs SE (YOSO)</th>
+        <th>vS-Graphs SE (PFCN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ICL -->
+      <tr>
+        <td class="tableFirstColumn">deer-ground</td>
+        <td>79.9</td>
+        <td><b>0.74</b></td>
+        <td>147.60</td>
+        <td>14.50</td>
+        <td>0.81</td>
+        <td>0.91</td>
+        <td><u>0.78</u></td>
+        <td>0.89</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">deer-walk-head</td>
+        <td>65.3</td>
+        <td>6.96</td>
+        <td>-</td>
+        <td>82.50</td>
+        <td><u>6.08</u></td>
+        <td>6.23</td>
+        <td><b>5.96</b></td>
+        <td>6.14</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">deer-walk</td>
+        <td>64.0</td>
+        <td>9.91</td>
+        <td>147.40</td>
+        <td>62.00</td>
+        <td>8.82</td>
+        <td>12.19</td>
+        <td><b>2.44</b></td>
+        <td><u>4.02</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">deer-running</td>
+        <td>28.4</td>
+        <td>6.92</td>
+        <td>-</td>
+        <td>78.70</td>
+        <td>5.34</td>
+        <td>5.47</td>
+        <td><b>2.83</b></td>
+        <td><u>3.34</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">deer-mav-fast</td>
+        <td>102.45</td>
+        <td>2.67</td>
+        <td>4.60</td>
+        <td>-</td>
+        <td>2.65</td>
+        <td><u>2.07</u></td>
+        <td>2.23</td>
+        <td><b>1.26</b></td>
+      </tr>
+      <!-- <tr>
                 <td class="tableFirstColumn">diamond-ground</td>
                 <td>79.95</td>
                 <td><b>0.081</b></td>
@@ -106,8 +106,11 @@
                 <td>-</td>
                 <td><b>0.026</b></td>
             </tr> -->
-    </table>
-    <div>
-        ⚠️ The minimum completion rate of each sequences is set to 50 percent. The best and second-best results are boldfaced and underlined, respectively
-    </div>
+    </tbody>
+  </table>
+
+  <div>
+    ⚠️ The minimum completion rate of each sequences is set to 50 percent. The
+    best and second-best results are boldfaced and underlined, respectively
+  </div>
 </div>

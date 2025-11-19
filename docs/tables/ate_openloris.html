@@ -1,22 +1,25 @@
 <div id="ATE_OpenLoris" class="tableWrapper">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">OpenLORIS Dataset</th>
-                <th colspan="4">Framework</th>
-            </tr>
-            <tr>
-                <th>Sequence</th>
-                <th>Duration (sec.)</th>
-                <th>ORB-SLAM 3.0</th>
-                <th>BAD SLAM</th>
-                <th>ElasticFusion</th>
-                <th>vS-Graphs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- OpenLORIS -->
-            <tr>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">OpenLORIS Dataset</th>
+        <th colspan="7">Framework</th>
+      </tr>
+      <tr>
+        <th>Sequence</th>
+        <th>Duration (sec.)</th>
+        <th>ORB-SLAM 3.0</th>
+        <th>BAD SLAM</th>
+        <th>ElasticFusion</th>
+        <th>vS-Graphs BC (YOSO)</th>
+        <th>vS-Graphs BC (PFCN)</th>
+        <th>vS-Graphs SE (YOSO)</th>
+        <th>vS-Graphs SE (PFCN)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- OpenLORIS -->
+      <!-- <tr>
                 <td class="tableFirstColumn">home1-4</td>
                 <td>71.0</td>
                 <td><b>0.209</b></td>
@@ -31,66 +34,88 @@
                 <td>0.463</td>
                 <td>0.277</td>
                 <td><b>0.246</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-1</td>
-                <td>27.0</td>
-                <td><b>0.064</b></td>
-                <td>0.123</td>
-                <td>0.069</td>
-                <td><u>0.064</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-2</td>
-                <td>30.0</td>
-                <td><u>0.101</u></td>
-                <td>0.140</td>
-                <td>0.113</td>
-                <td><b>0.099</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-3</td>
-                <td>12.0</td>
-                <td><u>0.147</u></td>
-                <td>0.195</td>
-                <td>-</td>
-                <td><b>0.146</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-4</td>
-                <td>29.0</td>
-                <td><b>0.125</b></td>
-                <td>0.343</td>
-                <td>0.180</td>
-                <td><u>0.127</u></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-5</td>
-                <td>53.0</td>
-                <td><u>0.116</u></td>
-                <td>0.302</td>
-                <td>0.221</td>
-                <td><b>0.111</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-6</td>
-                <td>36.5</td>
-                <td><u>0.059</u></td>
-                <td>0.107</td>
-                <td>-</td>
-                <td><b>0.059</b></td>
-            </tr>
-            <tr>
-                <td class="tableFirstColumn">office1-7</td>
-                <td>38.6</td>
-                <td><b>0.172</b></td>
-                <td>0.203</td>
-                <td>-</td>
-                <td><u>0.175</u></td>
-            </tr>
-        </tbody>
-    </table>
-    <div>
-        ⚠️ The minimum completion rate of each sequences is set to 50 percent. The best and second-best results are boldfaced and underlined, respectively
-    </div>
+            </tr> -->
+      <tr>
+        <td class="tableFirstColumn">office1-1</td>
+        <td>27.0</td>
+        <td><u>6.37</u></td>
+        <td>12.30</td>
+        <td>6.88</td>
+        <td>6.41</td>
+        <td><b>6.33</b></td>
+        <td>6.42</td>
+        <td><u>6.37</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-2</td>
+        <td>30.0</td>
+        <td>10.05</td>
+        <td>14.00</td>
+        <td>11.26</td>
+        <td>9.91</td>
+        <td>9.93</td>
+        <td><b>9.28</b></td>
+        <td><u>9.68</u></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-3</td>
+        <td>12.0</td>
+        <td>14.73</td>
+        <td>19.50</td>
+        <td>-</td>
+        <td><u>14.57</u></td>
+        <td>16.05</td>
+        <td><b>14.44</b></td>
+        <td>15.01</td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-4</td>
+        <td>29.0</td>
+        <td>12.51</td>
+        <td>34.30</td>
+        <td>18.03</td>
+        <td>12.68</td>
+        <td>12.55</td>
+        <td><u>11.54</u></td>
+        <td><b>11.36</b></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-5</td>
+        <td>53.0</td>
+        <td>11.57</td>
+        <td>30.20</td>
+        <td>22.15</td>
+        <td>11.11</td>
+        <td>11.29</td>
+        <td><u>10.71</u></td>
+        <td><b>10.59</b></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-6</td>
+        <td>36.5</td>
+        <td>5.86</td>
+        <td>10.70</td>
+        <td>-</td>
+        <td>5.90</td>
+        <td>5.89</td>
+        <td><u>5.70</u></td>
+        <td><b>5.67</b></td>
+      </tr>
+      <tr>
+        <td class="tableFirstColumn">office1-7</td>
+        <td>38.6</td>
+        <td>17.17</td>
+        <td>20.30</td>
+        <td>-</td>
+        <td>17.55</td>
+        <td>17.50</td>
+        <td><b>13.00</b></td>
+        <td><u>13.25</u></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    ⚠️ The minimum completion rate of each sequences is set to 50 percent. The
+    best and second-best results are boldfaced and underlined, respectively
+  </div>
 </div>
